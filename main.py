@@ -5,13 +5,20 @@ from dataclasses import dataclass, asdict, field
 import json
 
 
-SCROLLING = 30
+SCROLLING = 0
 
 @dataclass
 class Review:
     rating: Optional[int] = None
     time_review: str = "UNKNOWN"
     content: str = "UNKNOWN"
+    user_name: str = "UNKNOWN"
+    user_level: str = "UNKNOWN"
+    user_reviews: str = "UNKNOWN"
+    user_photos: str = "UNKNOWN"
+    visited_on: str = "UNKNOWN"
+    wait_time: str = "UNKNOWN"
+    reservation_recommended: str = "UNKNOWN"
 
 @dataclass
 class BusyHour:
@@ -37,11 +44,14 @@ class Place:
     num_reviews: str = "UNKNOWN"
     category: str = "UNKNOWN"
     address: str = "UNKNOWN"
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
     opening_time: List[Tuple[str, str]] = field(default_factory=list)
     contact_url: str = "UNKNOWN"
     phone: str = "UNKNOWN"
     reviews: List[Dict] = field(default_factory=list)
     busy_data: BusyTime = field(default_factory=dict)
+    about: Dict = field(default_factory=dict)
 
 
 class GoogleMapsScraper:
@@ -63,6 +73,15 @@ class GoogleMapsScraper:
         return m.group(1), m.group(2).replace(",", "")
     
     @staticmethod
+    def parse_location(url: str) -> Tuple[Optional[float], Optional[float]]:
+        m = re.search(r"!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)", url)
+        if m:
+            lat = float(m.group(1))
+            lng = float(m.group(2))
+            return lat, lng
+        return None, None
+    
+    @staticmethod
     def parse_busy_label(label: str) -> BusyHour:
         percent_match = re.search(r"(\d+)\s*%", label)
         hour_match = re.search(r"lúc\s*(\d{1,2})|at\s*(\d{1,2})", label, re.IGNORECASE)
@@ -81,8 +100,7 @@ class GoogleMapsScraper:
             element = self.page.wait_for_selector(selector, timeout=timeout)
             text = element.inner_text() if element else default
             return text.strip() if text and text.strip() else default
-        except Exception as e:
-            print(f"Could not find element with selector '{selector}': {e}")
+        except Exception:
             return default
 
     def safe_get_attribute(self, selector: str, attribute: str, timeout: int = 2000, default: str = "UNKNOWN") -> str:
@@ -91,13 +109,16 @@ class GoogleMapsScraper:
             element = self.page.wait_for_selector(selector, timeout=timeout)
             attr = element.get_attribute(attribute) if element else default
             return attr if attr else default
-        except Exception as e:
-            print(f"Could not get attribute '{attribute}' from '{selector}': {e}")
+        except Exception:
             return default
 
     def extract_place_info(self) -> Place:
         """Extract all place information from the current page"""
         place = Place()
+
+        # Location from URL
+        current_url = self.page.url
+        place.latitude, place.longitude = GoogleMapsScraper.parse_location(current_url)
 
         # Title
         place.title = self.safe_get_text("h1.DUwDvf")
@@ -112,13 +133,11 @@ class GoogleMapsScraper:
                 button = self.page.locator(
                     "button.e2moi[aria-haspopup='menu'][jsaction*='wfvdle']"
                 )
-                # print('button', button)
                 button.nth(2).click()
                 
                 self.page.wait_for_timeout(500)  # chờ menu render
 
                 # 2. Lấy tất cả menu items
-                # items = self.page.locator("div[role='menuitemradio']")
                 self.page.locator("div[role='menuitemradio']").nth(i).click()
                 self.page.wait_for_timeout(1000)
                 busy_times = self.page.locator('div[role="img"][class="dpoVLd "]')
@@ -134,7 +153,7 @@ class GoogleMapsScraper:
                     busy_data.days[day].hours.append(busy_hour)
             place.busy_data = busy_data
         except Exception as e:
-            print(f'could not extract popular time: {e}')
+            print(f'[extract] could not extract popular time: {e}')
             place.busy_data = {}
 
         # Reviews count
@@ -149,7 +168,7 @@ class GoogleMapsScraper:
             else:
                 place.num_reviews = "UNKNOWN"
         except Exception as e:
-            print(f"Could not extract reviews count: {e}")
+            print(f"[extract] could not extract reviews count: {e}")
             place.num_reviews = "UNKNOWN"
 
         # Category
@@ -170,7 +189,58 @@ class GoogleMapsScraper:
         # Reviews
         place.reviews = self.extract_reviews()
 
+        # About
+        place.about = self.extract_about()
+
+        print(f"[extract] Done: {place.title} | stars={place.stars} | reviews={place.num_reviews} | lat={place.latitude} | lng={place.longitude} | about_keys={list(place.about.keys()) if isinstance(place.about, dict) else 'N/A'}")
         return place
+
+    def extract_about(self) -> Dict:
+        """Extract about"""
+        about = {}
+        try:
+            # Tìm tab About động bằng text thay vì hardcode index
+            all_tabs = self.page.locator("button[data-tab-index]")
+            tab_count = all_tabs.count()
+
+            about_node = None
+            for t in range(tab_count):
+                tab = all_tabs.nth(t)
+                tab_label = tab.get_attribute("aria-label") or ""
+                tab_text = tab.inner_text().strip()
+                if tab_text.lower() in ("about", "giới thiệu") or "about" in tab_label.lower() or "giới thiệu" in tab_label.lower():
+                    about_node = tab
+                    break
+
+            if about_node:
+                about_node.click()
+                self.page.wait_for_timeout(2000)
+
+                sections = self.page.locator("div.iP2t7d")
+                sections_count = sections.count()
+
+                for i in range(sections_count):
+                    section = sections.nth(i)
+                    header = section.locator("h2.iL3Qke")
+                    if header.count() > 0:
+                        section_key = header.inner_text().strip().lower().replace(" ", "_")
+                        items = []
+                        li_tags = section.locator("li.hpLkke")
+                        for j in range(li_tags.count()):
+                            li = li_tags.nth(j)
+                            label_span = li.locator("span[aria-label]")
+                            if label_span.count() > 0:
+                                items.append(label_span.get_attribute("aria-label"))
+                            else:
+                                items.append(li.inner_text().strip())
+                        about[section_key] = items
+            else:
+                print(f"[extract_about] About tab not found (checked {tab_count} tabs)")
+
+        except Exception as e:
+            print(f"[extract_about] error: {e}")
+            about = {}
+        return about
 
     def extract_opening_hours(self) -> List[Tuple[str, str]]:
         """Extract opening hours"""
@@ -189,11 +259,10 @@ class GoogleMapsScraper:
                     time = time.strip() if time and time.strip() else "UNKNOWN"
                     
                     opening_time.append((day, time))
-                except Exception as e:
-                    print(f"Could not extract opening hour for row {i}: {e}")
+                except Exception:
                     opening_time.append(("UNKNOWN", "UNKNOWN"))
         except Exception as e:
-            print(f"Could not find opening hours table: {e}")
+            print(f"[extract] could not find opening hours: {e}")
 
         return opening_time
 
@@ -206,6 +275,11 @@ class GoogleMapsScraper:
             review_button.click(timeout=2000)
             self.page.wait_for_timeout(2000)
 
+            # scroll 5 times
+            for _ in range(5):
+                self.page.evaluate("window.scrollBy(0, window.innerHeight);")
+                self.page.wait_for_timeout(2000)
+
             review_cards = self.page.locator("div.jftiEf")
             count = review_cards.count()
 
@@ -213,6 +287,16 @@ class GoogleMapsScraper:
                 try:
                     review_card = review_cards.nth(i)
                     review = Review()
+
+                    try:
+                        # <button class="al6Kxe" jsaction="pane.wfvdle688.review.reviewerLink" data-review-id="Ci9DQUlRQUNvZENodHljRjlvT21zM1RIVTJYMVpQWVZOZlQwbGZVWGRVZVhZdFIwRRAB" data-href="https://www.google.com/maps/contrib/114428536243104399495/reviews?hl=en" jslog="95010; track:click;"><div class="d4r55 fontTitleMedium">Tia</div><div class="RfnDt ">Local Guide · 42 reviews · 56 photos</div></button>
+                        # get username, level, number of reviews, number of photos
+                        user_info = review_card.locator("button.al6Kxe")
+                        review.user_name = user_info.locator("div.d4r55").inner_text(timeout=1000)
+                        review.user_level = user_info.locator("div.RfnDt").inner_text(timeout=1000)
+                    except Exception:
+                        review.user_name = "UNKNOWN"
+                        review.user_level = "UNKNOWN"
 
                     # Rating
                     try:
@@ -227,36 +311,52 @@ class GoogleMapsScraper:
                                 review.rating = None
                         else:
                             review.rating = None
-                    except Exception as e:
-                        print(f"Could not extract rating for review {i}: {e}")
+                    except Exception:
                         review.rating = None
 
                     # Time
                     try:
                         time_text = review_card.locator("span.rsqaWe").inner_text(timeout=1000)
                         review.time_review = time_text.strip() if time_text and time_text.strip() else "UNKNOWN"
-                    except Exception as e:
-                        print(f"Could not extract time for review {i}: {e}")
+                    except Exception:
                         review.time_review = "UNKNOWN"
 
                     # Content
                     try:
+                        # <button class="w8nwRe kyuRq" aria-expanded="false" aria-controls="ChdDSUhNMG9nS0VJQ0FnSUNNOFpLM29nRRAB" data-review-id="ChdDSUhNMG9nS0VJQ0FnSUNNOFpLM29nRRAB" jslog="63707; track:click;metadata:WyIwYWhVS0V3aUZfYUw5cGMtU0F4V2c4WXNCSGR5WEZLd1EwcE1GQ0RJb0FnIl0=" aria-label="See more" jsaction="pane.wfvdle584.review.expandReview">More</button>
+                        # if button exist, click it
+                        more_button = review_card.locator("button.w8nwRe.kyuRq")
+                        if more_button.count() > 0:
+                            more_button.click(timeout=2000)
+                            self.page.wait_for_timeout(2000)
                         content_text = review_card.locator("span.wiI7pd").inner_text(timeout=1000)
                         review.content = content_text.strip() if content_text and content_text.strip() else "UNKNOWN"
-                    except Exception as e:
-                        print(f"Could not extract content for review {i}: {e}")
+                        
+                    except Exception:
                         review.content = "UNKNOWN"
+                    
+                    #  <div jslog="127691"><div jslog="126926;metadata:WyIwYWhVS0V3aTJtYUNncU0tU0F4VVZVRjRFSFRQVktXWVEzSWNIQ0lJQktBVSJd" class="PBK6be"><div><span class="RfDO5c"><span style="font-weight: bold;">Visited on</span></span></div><div><span class="RfDO5c"><span>Weekday</span><span jslog="126957;metadata:WyIwYWhVS0V3aTJtYUNncU0tU0F4VVZVRjRFSFRQVktXWVEzWWNIQ0lNQktBQSJd"></span></span></div></div><div jslog="126926;metadata:WyIwYWhVS0V3aTJtYUNncU0tU0F4VVZVRjRFSFRQVktXWVEzSWNIQ0lRQktBWSJd" class="PBK6be"><div><span class="RfDO5c"><span style="font-weight: bold;">Wait time</span></span></div><div><span class="RfDO5c"><span>No wait</span><span jslog="126957;metadata:WyIwYWhVS0V3aTJtYUNncU0tU0F4VVZVRjRFSFRQVktXWVEzWWNIQ0lVQktBQSJd"></span></span></div></div><div jslog="126926;metadata:WyIwYWhVS0V3aTJtYUNncU0tU0F4VVZVRjRFSFRQVktXWVEzSWNIQ0lZQktBYyJd" class="PBK6be"><div><span class="RfDO5c"><span style="font-weight: bold;">Reservation recommended</span></span></div><div><span class="RfDO5c"><span>No</span><span jslog="126957;metadata:WyIwYWhVS0V3aTJtYUNncU0tU0F4VVZVRjRFSFRQVktXWVEzWWNIQ0ljQktBQSJd"></span></span></div></div></div>
+                    # get visited on, wait time, reservation recommended from div
+                    try:
+                        visited_on = review_card.locator("div.PBK6be").first.inner_text(timeout=1000)
+                        wait_time = review_card.locator("div.PBK6be").nth(1).inner_text(timeout=1000)
+                        reservation_recommended = review_card.locator("div.PBK6be").nth(2).inner_text(timeout=1000)
+                        review.visited_on = visited_on.strip() if visited_on and visited_on.strip() else "UNKNOWN"
+                        review.wait_time = wait_time.strip() if wait_time and wait_time.strip() else "UNKNOWN"
+                        review.reservation_recommended = reservation_recommended.strip() if reservation_recommended and reservation_recommended.strip() else "UNKNOWN"
+                    except Exception:
+                        review.visited_on = "UNKNOWN"
+                        review.wait_time = "UNKNOWN"
+                        review.reservation_recommended = "UNKNOWN"
+                    
 
                     reviews.append(asdict(review))
-                    print(f"Review {i}: rating={review.rating}, time={review.time_review}")
 
-                except Exception as e:
-                    print(f"Error extracting review {i}: {e}")
-                    # Add a placeholder review
+                except Exception:
                     reviews.append(asdict(Review()))
 
         except Exception as e:
-            print(f"Could not extract reviews: {e}")
+            print(f"[extract] could not extract reviews: {e}")
 
         return reviews
 
@@ -283,12 +383,14 @@ class GoogleMapsScraper:
                 print("Opening Google Maps...")
                 self.page.goto("https://www.google.com/maps", timeout=60000)
 
+                self.page.wait_for_timeout(10000)
+
                 # Search
                 print(f"Searching for: {search_query}")
                 search_box = self.page.wait_for_selector('input[name="q"]')
                 search_box.fill(search_query)
                 self.page.keyboard.press("Enter")
-                self.page.wait_for_timeout(2000)
+                self.page.wait_for_timeout(10000)
 
                 print("Search completed")
 
@@ -299,7 +401,7 @@ class GoogleMapsScraper:
 
                 feed = self.page.locator("div[role='feed']")
                 for i in range(SCROLLING):
-                    print('scrolling......', i)
+                    print(f'Scrolling... {i}')
                     feed.hover()
                     self.page.mouse.wheel(0, 3000)
                     self.page.wait_for_timeout(2000)
@@ -311,24 +413,19 @@ class GoogleMapsScraper:
 
                 # Process each card
                 for i in range(count):
-                    print('=' * 100)
-                    print(f"Processing place {i + 1}/{count}")
-                    print('=' * 100)
+                    print(f"\n{'='*60} Place {i + 1}/{count} {'='*60}")
 
                     try:
                         card = cards.nth(i)
                         card.click()
                         self.page.wait_for_timeout(3000)
 
-                        # Extract place info
+                        # Extract place info (location is extracted inside)
                         place = self.extract_place_info()
                         results.append(asdict(place))
 
-                        print(f"Extracted: {place.title}")
-
                     except Exception as e:
                         print(f"Error processing card {i}: {e}")
-                        # Add placeholder place
                         results.append(asdict(Place()))
                         continue
 
@@ -347,18 +444,20 @@ def main():
     results = scraper.search_and_scrape("Hà Giang")
 
     # Print results
-    print("\n" + "=" * 100)
-    print("FINAL RESULTS")
-    print("=" * 100)
+    print("\n" + "=" * 80)
+    print(f"FINAL RESULTS: {len(results)} places")
+    print("=" * 80)
     
     for i, place in enumerate(results, 1):
         print(f"\n{i}. {place['title']}")
         print(f"   Stars: {place['stars']} ({place['num_reviews']} reviews)")
         print(f"   Category: {place['category']}")
         print(f"   Address: {place['address']}")
+        print(f"   Location: ({place['latitude']}, {place['longitude']})")
         print(f"   Phone: {place['phone']}")
         print(f"   Website: {place['contact_url']}")
         print(f"   Reviews: {len(place['reviews'])} extracted")
+        print(f"   About: {place['about']}")
 
     # Save to JSON
     with open("google_maps_results1.json", "w", encoding="utf-8") as f:
