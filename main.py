@@ -276,8 +276,9 @@ class GoogleMapsScraper:
             self.page.wait_for_timeout(2000)
 
             # scroll 5 times
+            # scroll cho thẻ div có class="m6QErb DxyBCb kA9KIf dS8AEf XiKgde", tabindex="-1", jslog="26354;mutable:true;"
             for _ in range(5):
-                self.page.evaluate("window.scrollBy(0, window.innerHeight);")
+                self.page.locator("div.m6QErb.DxyBCb.kA9KIf.dS8AEf.XiKgde[tabindex='-1'][jslog='26354;mutable:true;']").evaluate("el => el.scrollTop += 1000")
                 self.page.wait_for_timeout(2000)
 
             review_cards = self.page.locator("div.jftiEf")
