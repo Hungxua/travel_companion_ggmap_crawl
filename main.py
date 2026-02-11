@@ -5,7 +5,7 @@ from dataclasses import dataclass, asdict, field
 import json
 
 
-SCROLLING = 0
+SCROLLING = 30
 
 @dataclass
 class Review:
@@ -384,7 +384,7 @@ class GoogleMapsScraper:
                 print("Opening Google Maps...")
                 self.page.goto("https://www.google.com/maps", timeout=60000)
 
-                self.page.wait_for_timeout(10000)
+                self.page.wait_for_timeout(3000)
 
                 # Search
                 print(f"Searching for: {search_query}")
