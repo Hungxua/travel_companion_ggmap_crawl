@@ -1,0 +1,466 @@
+{
+  "destination": "Hà Giang",
+  "user_preferences": {
+    "days": 3,
+    "interests": [
+      "photography",
+      "healing"
+    ],
+    "companions": "couple",
+    "budget": "moderate",
+    "start_date": "2024-03-15"
+  },
+  "itinerary": [
+    {
+      "day": 1,
+      "date": "2024-03-15",
+      "title": "Hà Nội → Quản Bạ",
+      "schedule": [
+        {
+          "time": "09:44",
+          "type": "attraction",
+          "place": {
+            "id": "cong-troi-quan-ba",
+            "name": "Cổng trời Quản Bạ",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.0823,
+              "lng": 104.9584
+            },
+            "rating": 4.7,
+            "tips": [
+              "Đến buổi chiều 16:00-17:30 để có ánh sáng đẹp",
+              "Đứng bên trái cầu thang để chụp góc đẹp nhất"
+            ],
+            "warnings": [
+              {
+                "content": "Không đi sau 17:30 vì đường núi nguy hiểm",
+                "severity": "High"
+              }
+            ],
+            "avg_spending": null
+          },
+          "duration_minutes": 90,
+          "travel_time_minutes": 104,
+          "distance_km": 31.20186310906383,
+          "meal_type": null,
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "11:15",
+          "type": "food",
+          "place": {
+            "id": "com-ba-tam",
+            "name": "Cơm Bà Tám",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.08,
+              "lng": 104.955
+            },
+            "rating": 4.3,
+            "tips": [
+              "Cơm gia đình, ăn gì có nấy",
+              "Giá rất phải chăng"
+            ],
+            "warnings": [],
+            "avg_spending": 50000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 1,
+          "distance_km": null,
+          "meal_type": "lunch",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "12:50",
+          "type": "attraction",
+          "place": {
+            "id": "tham-luong-cave",
+            "name": "Hang Thâm Luồng",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 22.9952,
+              "lng": 104.9202
+            },
+            "rating": 4.6,
+            "tips": [
+              "Đường lên hang có 600 bậc thang, cần thể lực tốt",
+              "Mang đèn pin nếu muốn khám phá sâu"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 35,
+          "distance_km": 10.444131619786004,
+          "meal_type": null,
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "15:05",
+          "type": "food",
+          "place": {
+            "id": "pho-ba-duc",
+            "name": "Quán Phở Bà Đức",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 22.802,
+              "lng": 104.98
+            },
+            "rating": 4.5,
+            "tips": [
+              "Gọi thêm thịt trâu gác bếp - đặc sản",
+              "Quán đông từ 11h-13h, nên đi sớm hoặc muộn"
+            ],
+            "warnings": [],
+            "avg_spending": 60000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 75,
+          "distance_km": null,
+          "meal_type": "dinner",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "17:49",
+          "type": "accommodation",
+          "place": {
+            "id": "panorama-homestay",
+            "name": "Panorama Homestay Quản Bạ",
+            "type": "Accommodation",
+            "coordinates": {
+              "lat": 23.08,
+              "lng": 104.95
+            },
+            "rating": 4.8,
+            "tips": [
+              "View núi đôi Cô Tiên tuyệt đẹp",
+              "Thức dậy sớm ngắm bình minh",
+              "Bao gồm bữa tối với gia đình chủ nhà"
+            ],
+            "warnings": [],
+            "avg_spending": 350000
+          },
+          "duration_minutes": null,
+          "travel_time_minutes": null,
+          "distance_km": null,
+          "meal_type": null,
+          "activity": null,
+          "notes": "Di chuyển tới khu vực mới (đã xa 22.3km)"
+        }
+      ],
+      "summary": {
+        "total_attractions": 2,
+        "total_distance_km": 41.6,
+        "total_time_minutes": 589,
+        "accommodation": "Panorama Homestay Quản Bạ"
+      }
+    },
+    {
+      "day": 2,
+      "date": "2024-03-16",
+      "title": "Khám phá Mèo Vạc",
+      "schedule": [
+        {
+          "time": "09:44",
+          "type": "food",
+          "place": {
+            "id": "pho-ba-duc",
+            "name": "Quán Phở Bà Đức",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 22.802,
+              "lng": 104.98
+            },
+            "rating": 4.5,
+            "tips": [
+              "Gọi thêm thịt trâu gác bếp - đặc sản",
+              "Quán đông từ 11h-13h, nên đi sớm hoặc muộn"
+            ],
+            "warnings": [],
+            "avg_spending": 60000
+          },
+          "duration_minutes": 45,
+          "travel_time_minutes": 104,
+          "distance_km": null,
+          "meal_type": "breakfast",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "12:44",
+          "type": "attraction",
+          "place": {
+            "id": "ma-pi-leng",
+            "name": "Đèo Mã Pí Lèng",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.2167,
+              "lng": 105.3167
+            },
+            "rating": 4.9,
+            "tips": [
+              "Dừng ở viewpoint chính để ngắm toàn cảnh",
+              "Uống cà phê tại quán trên đỉnh đèo",
+              "Đi sáng sớm để tránh đông người"
+            ],
+            "warnings": [
+              {
+                "content": "NGUY HIỂM: Đường hẹp, vách đá dựng đứng",
+                "severity": "High"
+              },
+              {
+                "content": "Không đi khi trời mưa hoặc sương mù",
+                "severity": "High"
+              }
+            ],
+            "avg_spending": null
+          },
+          "duration_minutes": 120,
+          "travel_time_minutes": 135,
+          "distance_km": 40.45648072926894,
+          "meal_type": null,
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "14:44",
+          "type": "food",
+          "place": {
+            "id": "cafe-ma-pi-leng",
+            "name": "Cafe Mã Pí Lèng",
+            "type": "Cafe",
+            "coordinates": {
+              "lat": 23.217,
+              "lng": 105.317
+            },
+            "rating": 4.7,
+            "tips": [
+              "View cực đẹp từ quán",
+              "Cà phê bình thường nhưng view 10/10"
+            ],
+            "warnings": [],
+            "avg_spending": 40000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 0,
+          "distance_km": null,
+          "meal_type": "lunch",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "16:09",
+          "type": "food",
+          "place": {
+            "id": "nha-hang-dong-van",
+            "name": "Nhà hàng Đồng Văn",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.276,
+              "lng": 105.357
+            },
+            "rating": 4.4,
+            "tips": [
+              "Đặt chỗ trước vào cuối tuần",
+              "Thử món thắng cố"
+            ],
+            "warnings": [],
+            "avg_spending": 120000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 25,
+          "distance_km": null,
+          "meal_type": "dinner",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "17:09",
+          "type": "accommodation",
+          "place": {
+            "id": "hotel-dong-van",
+            "name": "Đồng Văn Stone Plateau Hotel",
+            "type": "Accommodation",
+            "coordinates": {
+              "lat": 23.275,
+              "lng": 105.355
+            },
+            "rating": 4.6,
+            "tips": [
+              "Khách sạn tiện nghi nhất Đồng Văn",
+              "Có nhà hàng riêng",
+              "Gần phố cổ, đi bộ được"
+            ],
+            "warnings": [],
+            "avg_spending": 450000
+          },
+          "duration_minutes": null,
+          "travel_time_minutes": null,
+          "distance_km": null,
+          "meal_type": null,
+          "activity": null,
+          "notes": "Di chuyển tới khu vực mới (đã xa 40.5km)"
+        }
+      ],
+      "summary": {
+        "total_attractions": 1,
+        "total_distance_km": 40.5,
+        "total_time_minutes": 549,
+        "accommodation": "Đồng Văn Stone Plateau Hotel"
+      }
+    },
+    {
+      "day": 3,
+      "date": "2024-03-17",
+      "title": "Đồng Văn → Hà Nội",
+      "schedule": [
+        {
+          "time": "08:25",
+          "type": "food",
+          "place": {
+            "id": "cafe-ma-pi-leng",
+            "name": "Cafe Mã Pí Lèng",
+            "type": "Cafe",
+            "coordinates": {
+              "lat": 23.217,
+              "lng": 105.317
+            },
+            "rating": 4.7,
+            "tips": [
+              "View cực đẹp từ quán",
+              "Cà phê bình thường nhưng view 10/10"
+            ],
+            "warnings": [],
+            "avg_spending": 40000
+          },
+          "duration_minutes": 45,
+          "travel_time_minutes": 25,
+          "distance_km": null,
+          "meal_type": "breakfast",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "09:31",
+          "type": "attraction",
+          "place": {
+            "id": "cao-nguyen-da",
+            "name": "Cao nguyên đá Đồng Văn",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.25,
+              "lng": 105.3
+            },
+            "rating": 4.8,
+            "tips": [
+              "Lái xe chậm để ngắm cảnh",
+              "Dừng chân ở nhiều điểm viewpoint"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 180,
+          "travel_time_minutes": 21,
+          "distance_km": 6.268630523712051,
+          "meal_type": null,
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "12:44",
+          "type": "food",
+          "place": {
+            "id": "cafe-ma-pi-leng",
+            "name": "Cafe Mã Pí Lèng",
+            "type": "Cafe",
+            "coordinates": {
+              "lat": 23.217,
+              "lng": 105.317
+            },
+            "rating": 4.7,
+            "tips": [
+              "View cực đẹp từ quán",
+              "Cà phê bình thường nhưng view 10/10"
+            ],
+            "warnings": [],
+            "avg_spending": 40000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 13,
+          "distance_km": null,
+          "meal_type": "lunch",
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "14:06",
+          "type": "attraction",
+          "place": {
+            "id": "pho-co-dong-van",
+            "name": "Phố cổ Đồng Văn",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.2772,
+              "lng": 105.3583
+            },
+            "rating": 4.5,
+            "tips": [
+              "Dạo phố vào buổi tối để cảm nhận không khí",
+              "Ghé thăm dinh Vua Mèo gần đó"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 90,
+          "travel_time_minutes": 22,
+          "distance_km": 6.679586025114814,
+          "meal_type": null,
+          "activity": null,
+          "notes": null
+        },
+        {
+          "time": "15:36",
+          "type": "food",
+          "place": {
+            "id": "nha-hang-dong-van",
+            "name": "Nhà hàng Đồng Văn",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.276,
+              "lng": 105.357
+            },
+            "rating": 4.4,
+            "tips": [
+              "Đặt chỗ trước vào cuối tuần",
+              "Thử món thắng cố"
+            ],
+            "warnings": [],
+            "avg_spending": 120000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 0,
+          "distance_km": null,
+          "meal_type": "dinner",
+          "activity": null,
+          "notes": null
+        }
+      ],
+      "summary": {
+        "total_attractions": 2,
+        "total_distance_km": 12.9,
+        "total_time_minutes": 516,
+        "accommodation": null
+      }
+    }
+  ],
+  "meta": {
+    "total_days": 3,
+    "total_attractions": 5,
+    "total_distance_km": 95.0
+  }
+}

@@ -142,15 +142,18 @@ class GoogleMapsScraper:
                 self.page.wait_for_timeout(1000)
                 busy_times = self.page.locator('div[role="img"][class="dpoVLd "]')
                 count = busy_times.count()
+                hours = []
                 for j in range(count):
                     busy_time = busy_times.nth(j)
                     label = busy_time.get_attribute("aria-label")
                     busy_hour = GoogleMapsScraper.parse_busy_label(label)
-                    day = self.page.locator("span[class='uEubGf NlVald']").nth(6).inner_text()
-                    if day not in busy_data.days:
-                        busy_data.days[day] = BusyDay(day=day, hours=[])
+                    if busy_hour.hour not in hours:
+                        hours.append(busy_hour.hour)
+                        day = self.page.locator("span[class='uEubGf NlVald']").nth(6).inner_text()
+                        if day not in busy_data.days:
+                            busy_data.days[day] = BusyDay(day=day, hours=[])
 
-                    busy_data.days[day].hours.append(busy_hour)
+                        busy_data.days[day].hours.append(busy_hour)
             place.busy_data = busy_data
         except Exception as e:
             print(f'[extract] could not extract popular time: {e}')
@@ -278,6 +281,7 @@ class GoogleMapsScraper:
             # scroll 5 times
             # scroll cho thẻ div có class="m6QErb DxyBCb kA9KIf dS8AEf XiKgde", tabindex="-1", jslog="26354;mutable:true;"
             for _ in range(5):
+                print('scrolling....')
                 self.page.locator("div.m6QErb.DxyBCb.kA9KIf.dS8AEf.XiKgde[tabindex='-1'][jslog='26354;mutable:true;']").evaluate("el => el.scrollTop += 1000")
                 self.page.wait_for_timeout(2000)
 
@@ -358,7 +362,7 @@ class GoogleMapsScraper:
 
         except Exception as e:
             print(f"[extract] could not extract reviews: {e}")
-
+        print('asdict(reviews)', reviews)
         return reviews
 
     def search_and_scrape(self, search_query: str) -> List[Dict]:
@@ -391,7 +395,7 @@ class GoogleMapsScraper:
                 search_box = self.page.wait_for_selector('input[name="q"]')
                 search_box.fill(search_query)
                 self.page.keyboard.press("Enter")
-                self.page.wait_for_timeout(10000)
+                self.page.wait_for_timeout(5000)
 
                 print("Search completed")
 
@@ -461,10 +465,10 @@ def main():
         print(f"   About: {place['about']}")
 
     # Save to JSON
-    with open("google_maps_results1.json", "w", encoding="utf-8") as f:
+    with open("google_maps_results4.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
-    print(f"\nSaved {len(results)} places to google_maps_results1.json")
+    print(f"\nSaved {len(results)} places to google_maps_results4.json")
 
 
 if __name__ == "__main__":
