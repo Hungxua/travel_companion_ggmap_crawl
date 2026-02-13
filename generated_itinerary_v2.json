@@ -1,0 +1,595 @@
+{
+  "destination": "Hà Giang",
+  "user_preferences": {
+    "days": 3,
+    "interests": [
+      "photography",
+      "healing"
+    ],
+    "companions": "couple",
+    "budget": "moderate",
+    "start_date": "2024-03-15"
+  },
+  "route_analysis": {
+    "total_clusters": 3,
+    "cluster_order": [
+      "Khu vực Quản Bạ",
+      "Khu vực Đồng Văn",
+      "Khu vực Mèo Vạc"
+    ]
+  },
+  "itinerary": [
+    {
+      "day": 1,
+      "date": "2024-03-15",
+      "title": "TP Hà Giang → Khu vực Quản Bạ",
+      "schedule": [
+        {
+          "time": "08:08",
+          "type": "food",
+          "place": {
+            "id": "pho-ba-duc",
+            "name": "Quán Phở Bà Đức",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 22.802,
+              "lng": 104.98
+            },
+            "rating": 4.5,
+            "tips": [
+              "Gọi thêm thịt trâu gác bếp - đặc sản",
+              "Quán đông từ 11h-13h, nên đi sớm hoặc muộn"
+            ],
+            "warnings": [],
+            "avg_spending": 60000
+          },
+          "duration_minutes": 45,
+          "travel_time_minutes": 8,
+          "distance_km": null,
+          "meal_type": "breakfast",
+          "notes": null
+        },
+        {
+          "time": "10:35",
+          "type": "attraction",
+          "place": {
+            "id": "nui-doi-co-tien",
+            "name": "Núi đôi Cô Tiên",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.075,
+              "lng": 104.945
+            },
+            "rating": 4.8,
+            "tips": [
+              "Biểu tượng của Hà Giang, nhìn từ Cổng trời rõ nhất",
+              "Đẹp nhất lúc sáng sớm có sương mù"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 102,
+          "distance_km": 30.6,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "11:36",
+          "type": "food",
+          "place": {
+            "id": "quan-an-quan-ba",
+            "name": "Quán Ăn Người Mông",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.075,
+              "lng": 104.95
+            },
+            "rating": 4.4,
+            "tips": [
+              "Thử mèn mén và thắng cố",
+              "Chủ nhà nấu theo kiểu truyền thống"
+            ],
+            "warnings": [],
+            "avg_spending": 70000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 1,
+          "distance_km": null,
+          "meal_type": "lunch",
+          "notes": null
+        },
+        {
+          "time": "12:41",
+          "type": "attraction",
+          "place": {
+            "id": "cong-troi-quan-ba",
+            "name": "Cổng trời Quản Bạ",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.0823,
+              "lng": 104.9584
+            },
+            "rating": 4.7,
+            "tips": [
+              "Đến buổi chiều 16:00-17:30 để có ánh sáng đẹp",
+              "Đứng bên trái cầu thang để chụp góc đẹp nhất"
+            ],
+            "warnings": [
+              {
+                "content": "Không đi sau 17:30 vì đường núi nguy hiểm",
+                "severity": "High"
+              }
+            ],
+            "avg_spending": null
+          },
+          "duration_minutes": 90,
+          "travel_time_minutes": 5,
+          "distance_km": 1.2,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "14:15",
+          "type": "attraction",
+          "place": {
+            "id": "ruong-bac-thang-quan-ba",
+            "name": "Ruộng bậc thang Quản Bạ",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.09,
+              "lng": 104.97
+            },
+            "rating": 4.5,
+            "tips": [
+              "Đẹp nhất tháng 9-10 mùa lúa chín",
+              "Tháng 5-6 có màu xanh non"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 4,
+          "distance_km": 1.5,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "15:18",
+          "type": "attraction",
+          "place": {
+            "id": "ban-dan-quan-ba",
+            "name": "Bản Dân - Làng người Mông",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.085,
+              "lng": 104.98
+            },
+            "rating": 4.4,
+            "tips": [
+              "Trải nghiệm dệt vải cùng phụ nữ Mông",
+              "Không chụp ảnh khi chưa xin phép"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 3,
+          "distance_km": 1.2,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "16:28",
+          "type": "food",
+          "place": {
+            "id": "quan-an-quan-ba",
+            "name": "Quán Ăn Người Mông",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.075,
+              "lng": 104.95
+            },
+            "rating": 4.4,
+            "tips": [
+              "Thử mèn mén và thắng cố",
+              "Chủ nhà nấu theo kiểu truyền thống"
+            ],
+            "warnings": [],
+            "avg_spending": 70000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 10,
+          "distance_km": null,
+          "meal_type": "dinner",
+          "notes": null
+        },
+        {
+          "time": "17:29",
+          "type": "accommodation",
+          "place": {
+            "id": "panorama-homestay",
+            "name": "Panorama Homestay Quản Bạ",
+            "type": "Accommodation",
+            "coordinates": {
+              "lat": 23.08,
+              "lng": 104.95
+            },
+            "rating": 4.8,
+            "tips": [
+              "View núi đôi Cô Tiên tuyệt đẹp",
+              "Thức dậy sớm ngắm bình minh"
+            ],
+            "warnings": [],
+            "avg_spending": 350000
+          },
+          "duration_minutes": null,
+          "travel_time_minutes": null,
+          "distance_km": null,
+          "meal_type": null,
+          "notes": "Nghỉ gần điểm cuối (di chuyển 28.8km từ đầu ngày)"
+        }
+      ],
+      "summary": {
+        "total_attractions": 4,
+        "clusters_visited": [
+          "Khu vực Quản Bạ"
+        ],
+        "total_distance_km": 34.5,
+        "total_time_minutes": 569,
+        "accommodation": "Panorama Homestay Quản Bạ"
+      }
+    },
+    {
+      "day": 2,
+      "date": "2024-03-16",
+      "title": "Khu vực Đồng Văn",
+      "schedule": [
+        {
+          "time": "08:01",
+          "type": "food",
+          "place": {
+            "id": "quan-an-quan-ba",
+            "name": "Quán Ăn Người Mông",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.075,
+              "lng": 104.95
+            },
+            "rating": 4.4,
+            "tips": [
+              "Thử mèn mén và thắng cố",
+              "Chủ nhà nấu theo kiểu truyền thống"
+            ],
+            "warnings": [],
+            "avg_spending": 70000
+          },
+          "duration_minutes": 45,
+          "travel_time_minutes": 1,
+          "distance_km": null,
+          "meal_type": "breakfast",
+          "notes": null
+        },
+        {
+          "time": "11:02",
+          "type": "attraction",
+          "place": {
+            "id": "ma-pi-leng",
+            "name": "Đèo Mã Pí Lèng",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.2167,
+              "lng": 105.3167
+            },
+            "rating": 4.9,
+            "tips": [
+              "Dừng ở viewpoint chính để ngắm toàn cảnh",
+              "Đi sáng sớm để tránh đông người"
+            ],
+            "warnings": [
+              {
+                "content": "NGUY HIỂM: Đường hẹp, vách đá dựng đứng",
+                "severity": "High"
+              },
+              {
+                "content": "Không đi khi trời mưa hoặc sương mù",
+                "severity": "High"
+              }
+            ],
+            "avg_spending": null
+          },
+          "duration_minutes": 120,
+          "travel_time_minutes": 136,
+          "distance_km": 40.7,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "13:03",
+          "type": "food",
+          "place": {
+            "id": "cafe-ma-pi-leng",
+            "name": "Cafe Mã Pí Lèng",
+            "type": "Cafe",
+            "coordinates": {
+              "lat": 23.217,
+              "lng": 105.317
+            },
+            "rating": 4.7,
+            "tips": [
+              "View cực đẹp từ quán",
+              "Cà phê bình thường nhưng view 10/10"
+            ],
+            "warnings": [],
+            "avg_spending": 40000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 1,
+          "distance_km": null,
+          "meal_type": "lunch",
+          "notes": null
+        },
+        {
+          "time": "14:29",
+          "type": "attraction",
+          "place": {
+            "id": "pho-co-dong-van",
+            "name": "Phố cổ Đồng Văn",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.2772,
+              "lng": 105.3583
+            },
+            "rating": 4.5,
+            "tips": [
+              "Dạo phố vào buổi tối để cảm nhận không khí",
+              "Ghé thăm dinh Vua Mèo gần đó"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 90,
+          "travel_time_minutes": 26,
+          "distance_km": 7.9,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "16:00",
+          "type": "food",
+          "place": {
+            "id": "nha-hang-dong-van",
+            "name": "Nhà hàng Đồng Văn",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.276,
+              "lng": 105.357
+            },
+            "rating": 4.4,
+            "tips": [
+              "Đặt chỗ trước vào cuối tuần",
+              "Thử món thắng cố"
+            ],
+            "warnings": [],
+            "avg_spending": 120000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 1,
+          "distance_km": null,
+          "meal_type": "dinner",
+          "notes": null
+        },
+        {
+          "time": "17:01",
+          "type": "accommodation",
+          "place": {
+            "id": "hotel-dong-van",
+            "name": "Đồng Văn Stone Plateau Hotel",
+            "type": "Accommodation",
+            "coordinates": {
+              "lat": 23.275,
+              "lng": 105.355
+            },
+            "rating": 4.6,
+            "tips": [
+              "Khách sạn tiện nghi nhất Đồng Văn",
+              "Gần phố cổ, đi bộ được"
+            ],
+            "warnings": [],
+            "avg_spending": 450000
+          },
+          "duration_minutes": null,
+          "travel_time_minutes": null,
+          "distance_km": null,
+          "meal_type": null,
+          "notes": "Nghỉ gần điểm cuối (di chuyển 46.7km từ đầu ngày)"
+        }
+      ],
+      "summary": {
+        "total_attractions": 2,
+        "clusters_visited": [
+          "Khu vực Đồng Văn"
+        ],
+        "total_distance_km": 48.6,
+        "total_time_minutes": 541,
+        "accommodation": "Đồng Văn Stone Plateau Hotel"
+      }
+    },
+    {
+      "day": 3,
+      "date": "2024-03-17",
+      "title": "Khu vực Mèo Vạc → TP Hà Giang",
+      "schedule": [
+        {
+          "time": "08:22",
+          "type": "food",
+          "place": {
+            "id": "cafe-ma-pi-leng",
+            "name": "Cafe Mã Pí Lèng",
+            "type": "Cafe",
+            "coordinates": {
+              "lat": 23.217,
+              "lng": 105.317
+            },
+            "rating": 4.7,
+            "tips": [
+              "View cực đẹp từ quán",
+              "Cà phê bình thường nhưng view 10/10"
+            ],
+            "warnings": [],
+            "avg_spending": 40000
+          },
+          "duration_minutes": 45,
+          "travel_time_minutes": 22,
+          "distance_km": null,
+          "meal_type": "breakfast",
+          "notes": null
+        },
+        {
+          "time": "10:24",
+          "type": "attraction",
+          "place": {
+            "id": "bến-thuyền-nho-que",
+            "name": "Bến thuyền Nho Quế",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.14,
+              "lng": 105.52499999999999
+            },
+            "rating": 4.8,
+            "tips": [
+              "Đặt thuyền từ sáng sớm",
+              "Đi thuyền 30 phút đến chân Mã Pí Lèng"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 77,
+          "distance_km": 22.9,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "12:11",
+          "type": "food",
+          "place": {
+            "id": "com-nieu-meo-vac",
+            "name": "Cơm Niêu Mèo Vạc",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.153,
+              "lng": 105.387
+            },
+            "rating": 4.4,
+            "tips": [
+              "Cơm bình dân ngon, giá hợp lý",
+              "Gọi thêm canh rau rừng"
+            ],
+            "warnings": [],
+            "avg_spending": 65000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 47,
+          "distance_km": null,
+          "meal_type": "lunch",
+          "notes": null
+        },
+        {
+          "time": "13:13",
+          "type": "attraction",
+          "place": {
+            "id": "thung-lung-nho-que",
+            "name": "Thung lũng sông Nho Quế",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.135,
+              "lng": 105.53
+            },
+            "rating": 4.9,
+            "tips": [
+              "Thuê thuyền kayak ngắm từ dưới lên",
+              "Màu nước xanh ngọc đẹp nhất buổi trưa"
+            ],
+            "warnings": [
+              {
+                "content": "Dòng nước chảy xiết sau mưa, không bơi lội",
+                "severity": "Medium"
+              }
+            ],
+            "avg_spending": null
+          },
+          "duration_minutes": 90,
+          "travel_time_minutes": 2,
+          "distance_km": 14.8,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "14:51",
+          "type": "attraction",
+          "place": {
+            "id": "cho-phien-meo-vac",
+            "name": "Chợ phiên Mèo Vạc",
+            "type": "Attraction",
+            "coordinates": {
+              "lat": 23.12,
+              "lng": 105.50999999999999
+            },
+            "rating": 4.7,
+            "tips": [
+              "Chợ phiên đặc sắc nhất vùng cao",
+              "Họp chủ nhật, đến trước 7h để cảm nhận đầy đủ"
+            ],
+            "warnings": [],
+            "avg_spending": null
+          },
+          "duration_minutes": 90,
+          "travel_time_minutes": 8,
+          "distance_km": 2.6,
+          "meal_type": null,
+          "notes": null
+        },
+        {
+          "time": "17:06",
+          "type": "food",
+          "place": {
+            "id": "quan-toi-meo-vac",
+            "name": "Quán Tối Thung Lũng",
+            "type": "Restaurant",
+            "coordinates": {
+              "lat": 23.156,
+              "lng": 105.384
+            },
+            "rating": 4.5,
+            "tips": [
+              "Ngồi ngoài trời ngắm sao",
+              "Thử thịt lợn cắp nách nướng"
+            ],
+            "warnings": [],
+            "avg_spending": 100000
+          },
+          "duration_minutes": 60,
+          "travel_time_minutes": 45,
+          "distance_km": null,
+          "meal_type": "dinner",
+          "notes": null
+        }
+      ],
+      "summary": {
+        "total_attractions": 3,
+        "clusters_visited": [
+          "Khu vực Mèo Vạc"
+        ],
+        "total_distance_km": 40.3,
+        "total_time_minutes": 606,
+        "accommodation": null
+      }
+    }
+  ],
+  "meta": {
+    "total_days": 3,
+    "total_attractions": 9,
+    "total_distance_km": 123.4
+  }
+}

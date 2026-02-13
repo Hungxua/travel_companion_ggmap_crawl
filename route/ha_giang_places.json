@@ -25,14 +25,14 @@
         "vibe_scores": {
           "healing": 0.65,
           "photography": 0.95,
-          "adventure": 0.40,
-          "culinary": 0.10
+          "adventure": 0.4,
+          "culinary": 0.1
         },
         "companion_scores": {
           "solo": 0.75,
-          "couple": 0.90,
+          "couple": 0.9,
           "friends": 0.85,
-          "family": 0.80
+          "family": 0.8
         },
         "must_visit": true,
         "priority_score": 0.85,
@@ -50,6 +50,176 @@
         ]
       },
       {
+        "id": "nui-doi-co-tien",
+        "name": "Núi đôi Cô Tiên",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.075,
+          "lng": 104.945
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 60,
+        "opening_hours": "06:00-18:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.8,
+          "photography": 0.92,
+          "adventure": 0.3,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.7,
+          "couple": 0.95,
+          "friends": 0.8,
+          "family": 0.75
+        },
+        "must_visit": true,
+        "priority_score": 0.88,
+        "google_maps_rating": 4.8,
+        "google_maps_reviews_count": 412,
+        "tips": [
+          "Biểu tượng của Hà Giang, nhìn từ Cổng trời rõ nhất",
+          "Đẹp nhất lúc sáng sớm có sương mù"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "lang-van-hoa-quan-ba",
+        "name": "Làng văn hóa Quản Bạ",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.068,
+          "lng": 104.962
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 75,
+        "opening_hours": "07:00-17:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.85,
+          "photography": 0.75,
+          "adventure": 0.2,
+          "culinary": 0.6
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.85,
+          "friends": 0.7,
+          "family": 0.9
+        },
+        "must_visit": false,
+        "priority_score": 0.65,
+        "google_maps_rating": 4.4,
+        "google_maps_reviews_count": 156,
+        "tips": [
+          "Gặp gỡ người Dao đỏ và Mông",
+          "Mua thổ cẩm trực tiếp từ người dân"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "ruong-bac-thang-quan-ba",
+        "name": "Ruộng bậc thang Quản Bạ",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.09,
+          "lng": 104.97
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 60,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.9,
+          "photography": 0.88,
+          "adventure": 0.15,
+          "culinary": 0.1
+        },
+        "companion_scores": {
+          "solo": 0.85,
+          "couple": 0.9,
+          "friends": 0.75,
+          "family": 0.8
+        },
+        "must_visit": false,
+        "priority_score": 0.7,
+        "google_maps_rating": 4.5,
+        "google_maps_reviews_count": 203,
+        "tips": [
+          "Đẹp nhất tháng 9-10 mùa lúa chín",
+          "Tháng 5-6 có màu xanh non"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "suoi-tien-quan-ba",
+        "name": "Suối Tiên Quản Bạ",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.06,
+          "lng": 104.948
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 45,
+        "opening_hours": "07:00-17:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.95,
+          "photography": 0.7,
+          "adventure": 0.45,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.9,
+          "friends": 0.85,
+          "family": 0.75
+        },
+        "must_visit": false,
+        "priority_score": 0.6,
+        "google_maps_rating": 4.3,
+        "google_maps_reviews_count": 88,
+        "tips": [
+          "Nước rất sạch và mát",
+          "Mang theo đồ dã ngoại"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "cho-phien-quan-ba",
+        "name": "Chợ phiên Quản Bạ",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.072,
+          "lng": 104.956
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 90,
+        "opening_hours": "06:00-12:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.55,
+          "photography": 0.8,
+          "adventure": 0.25,
+          "culinary": 0.85
+        },
+        "companion_scores": {
+          "solo": 0.9,
+          "couple": 0.8,
+          "friends": 0.85,
+          "family": 0.88
+        },
+        "must_visit": false,
+        "priority_score": 0.72,
+        "google_maps_rating": 4.5,
+        "google_maps_reviews_count": 178,
+        "tips": [
+          "Họp chủ nhật sáng sớm",
+          "Thử thắng cố và mèn mén ngay tại chợ"
+        ],
+        "warnings": []
+      },
+      {
         "id": "tham-luong-cave",
         "name": "Hang Thâm Luồng",
         "poi_type": "Attraction",
@@ -57,29 +227,136 @@
           "lat": 22.9952,
           "lng": 104.9202
         },
-        "district": "Vị Xuyên",
+        "district": "Quản Bạ",
         "visit_duration_minutes": 60,
         "opening_hours": "09:00-16:00",
         "night_danger": false,
         "vibe_scores": {
-          "healing": 0.80,
+          "healing": 0.8,
           "photography": 0.85,
-          "adventure": 0.60,
-          "culinary": 0.20
+          "adventure": 0.6,
+          "culinary": 0.2
         },
         "companion_scores": {
-          "solo": 0.60,
+          "solo": 0.6,
           "couple": 0.75,
-          "friends": 0.70,
-          "family": 0.50
+          "friends": 0.7,
+          "family": 0.5
         },
         "must_visit": false,
-        "priority_score": 0.60,
+        "priority_score": 0.6,
         "google_maps_rating": 4.6,
         "google_maps_reviews_count": 77,
         "tips": [
           "Đường lên hang có 600 bậc thang, cần thể lực tốt",
           "Mang đèn pin nếu muốn khám phá sâu"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "dinh-nui-quan-ba",
+        "name": "Đỉnh núi Tha Linh Nha",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.095,
+          "lng": 104.938
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 120,
+        "opening_hours": "06:00-17:00",
+        "night_danger": true,
+        "vibe_scores": {
+          "healing": 0.7,
+          "photography": 0.9,
+          "adventure": 0.85,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.85,
+          "couple": 0.75,
+          "friends": 0.9,
+          "family": 0.4
+        },
+        "must_visit": false,
+        "priority_score": 0.68,
+        "google_maps_rating": 4.6,
+        "google_maps_reviews_count": 134,
+        "tips": [
+          "Cần hướng dẫn viên địa phương",
+          "View 360° toàn thung lũng"
+        ],
+        "warnings": [
+          {
+            "content": "Đường trơn khi mưa, cần giày leo núi",
+            "severity": "Medium"
+          }
+        ]
+      },
+      {
+        "id": "ban-dan-quan-ba",
+        "name": "Bản Dân - Làng người Mông",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.085,
+          "lng": 104.98
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 60,
+        "opening_hours": "07:00-18:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.88,
+          "photography": 0.78,
+          "adventure": 0.2,
+          "culinary": 0.5
+        },
+        "companion_scores": {
+          "solo": 0.75,
+          "couple": 0.85,
+          "friends": 0.7,
+          "family": 0.92
+        },
+        "must_visit": false,
+        "priority_score": 0.62,
+        "google_maps_rating": 4.4,
+        "google_maps_reviews_count": 95,
+        "tips": [
+          "Trải nghiệm dệt vải cùng phụ nữ Mông",
+          "Không chụp ảnh khi chưa xin phép"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "ho-thau-quan-ba",
+        "name": "Hồ Thầu",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.105,
+          "lng": 104.965
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 45,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.92,
+          "photography": 0.8,
+          "adventure": 0.1,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.88,
+          "couple": 0.92,
+          "friends": 0.72,
+          "family": 0.78
+        },
+        "must_visit": false,
+        "priority_score": 0.58,
+        "google_maps_rating": 4.3,
+        "google_maps_reviews_count": 61,
+        "tips": [
+          "Hồ nước yên tĩnh, ít khách",
+          "Sáng sớm có sương mù rất đẹp"
         ],
         "warnings": []
       },
@@ -91,21 +368,21 @@
           "lat": 23.2167,
           "lng": 105.3167
         },
-        "district": "Mèo Vạc",
+        "district": "Đồng Văn",
         "visit_duration_minutes": 120,
         "opening_hours": "06:00-18:00",
         "night_danger": true,
         "vibe_scores": {
-          "healing": 0.50,
+          "healing": 0.5,
           "photography": 0.98,
           "adventure": 0.95,
           "culinary": 0.15
         },
         "companion_scores": {
-          "solo": 0.70,
+          "solo": 0.7,
           "couple": 0.85,
-          "friends": 0.90,
-          "family": 0.40
+          "friends": 0.9,
+          "family": 0.4
         },
         "must_visit": true,
         "priority_score": 0.95,
@@ -113,7 +390,6 @@
         "google_maps_reviews_count": 1847,
         "tips": [
           "Dừng ở viewpoint chính để ngắm toàn cảnh",
-          "Uống cà phê tại quán trên đỉnh đèo",
           "Đi sáng sớm để tránh đông người"
         ],
         "warnings": [
@@ -140,19 +416,19 @@
         "opening_hours": "00:00-23:59",
         "night_danger": false,
         "vibe_scores": {
-          "healing": 0.60,
+          "healing": 0.6,
           "photography": 0.85,
-          "adventure": 0.30,
+          "adventure": 0.3,
           "culinary": 0.75
         },
         "companion_scores": {
-          "solo": 0.80,
+          "solo": 0.8,
           "couple": 0.85,
           "friends": 0.75,
-          "family": 0.90
+          "family": 0.9
         },
         "must_visit": true,
-        "priority_score": 0.80,
+        "priority_score": 0.8,
         "google_maps_rating": 4.5,
         "google_maps_reviews_count": 342,
         "tips": [
@@ -166,8 +442,8 @@
         "name": "Cao nguyên đá Đồng Văn",
         "poi_type": "Attraction",
         "coordinates": {
-          "lat": 23.2500,
-          "lng": 105.3000
+          "lat": 23.25,
+          "lng": 105.3
         },
         "district": "Đồng Văn",
         "visit_duration_minutes": 180,
@@ -175,15 +451,15 @@
         "night_danger": false,
         "vibe_scores": {
           "healing": 0.75,
-          "photography": 0.90,
-          "adventure": 0.70,
-          "culinary": 0.20
+          "photography": 0.9,
+          "adventure": 0.7,
+          "culinary": 0.2
         },
         "companion_scores": {
           "solo": 0.85,
-          "couple": 0.80,
+          "couple": 0.8,
           "friends": 0.75,
-          "family": 0.70
+          "family": 0.7
         },
         "must_visit": true,
         "priority_score": 0.85,
@@ -208,19 +484,19 @@
         "opening_hours": "07:00-17:00",
         "night_danger": false,
         "vibe_scores": {
-          "healing": 0.70,
+          "healing": 0.7,
           "photography": 0.88,
-          "adventure": 0.50,
-          "culinary": 0.10
+          "adventure": 0.5,
+          "culinary": 0.1
         },
         "companion_scores": {
           "solo": 0.75,
-          "couple": 0.70,
-          "friends": 0.80,
+          "couple": 0.7,
+          "friends": 0.8,
           "family": 0.85
         },
         "must_visit": false,
-        "priority_score": 0.70,
+        "priority_score": 0.7,
         "google_maps_rating": 4.6,
         "google_maps_reviews_count": 234,
         "tips": [
@@ -228,6 +504,575 @@
           "Đây là điểm cực Bắc của Việt Nam"
         ],
         "warnings": []
+      },
+      {
+        "id": "dinh-vua-meo",
+        "name": "Dinh Vua Mèo",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.281,
+          "lng": 105.362
+        },
+        "district": "Đồng Văn",
+        "visit_duration_minutes": 75,
+        "opening_hours": "07:30-17:30",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.55,
+          "photography": 0.82,
+          "adventure": 0.2,
+          "culinary": 0.15
+        },
+        "companion_scores": {
+          "solo": 0.85,
+          "couple": 0.8,
+          "friends": 0.75,
+          "family": 0.88
+        },
+        "must_visit": true,
+        "priority_score": 0.78,
+        "google_maps_rating": 4.6,
+        "google_maps_reviews_count": 489,
+        "tips": [
+          "Kiến trúc pha trộn Á-Âu độc đáo",
+          "Có hướng dẫn viên tại chỗ"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "suoi-lung-khuy",
+        "name": "Suối Lũng Khuy",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.265,
+          "lng": 105.32
+        },
+        "district": "Đồng Văn",
+        "visit_duration_minutes": 60,
+        "opening_hours": "07:00-17:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.9,
+          "photography": 0.72,
+          "adventure": 0.4,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.88,
+          "friends": 0.75,
+          "family": 0.7
+        },
+        "must_visit": false,
+        "priority_score": 0.58,
+        "google_maps_rating": 4.3,
+        "google_maps_reviews_count": 72,
+        "tips": [
+          "Tắm suối mát giữa đá tai mèo",
+          "Ít người biết đến, yên tĩnh"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "cho-dong-van",
+        "name": "Chợ phiên Đồng Văn",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.276,
+          "lng": 105.356
+        },
+        "district": "Đồng Văn",
+        "visit_duration_minutes": 90,
+        "opening_hours": "05:00-12:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.45,
+          "photography": 0.85,
+          "adventure": 0.2,
+          "culinary": 0.9
+        },
+        "companion_scores": {
+          "solo": 0.88,
+          "couple": 0.8,
+          "friends": 0.82,
+          "family": 0.85
+        },
+        "must_visit": false,
+        "priority_score": 0.72,
+        "google_maps_rating": 4.5,
+        "google_maps_reviews_count": 267,
+        "tips": [
+          "Họp chủ nhật từ 5h sáng",
+          "Thử bánh tam giác mạch"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "vuon-cai-dong-van",
+        "name": "Vườn cải tam giác mạch Đồng Văn",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.24,
+          "lng": 105.31
+        },
+        "district": "Đồng Văn",
+        "visit_duration_minutes": 60,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.82,
+          "photography": 0.95,
+          "adventure": 0.1,
+          "culinary": 0.3
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.95,
+          "friends": 0.78,
+          "family": 0.82
+        },
+        "must_visit": false,
+        "priority_score": 0.74,
+        "google_maps_rating": 4.7,
+        "google_maps_reviews_count": 312,
+        "tips": [
+          "Nở rộ tháng 10-12",
+          "Cánh đồng hồng tím trải dài"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "hang-dong-van",
+        "name": "Hang động Đồng Văn",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.288,
+          "lng": 105.348
+        },
+        "district": "Đồng Văn",
+        "visit_duration_minutes": 75,
+        "opening_hours": "08:00-17:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.65,
+          "photography": 0.8,
+          "adventure": 0.7,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.75,
+          "couple": 0.78,
+          "friends": 0.85,
+          "family": 0.65
+        },
+        "must_visit": false,
+        "priority_score": 0.62,
+        "google_maps_rating": 4.4,
+        "google_maps_reviews_count": 118,
+        "tips": [
+          "Mang đèn pin",
+          "Thạch nhũ đẹp bên trong"
+        ],
+        "warnings": [
+          {
+            "content": "Lối vào trơn, đi giày bám",
+            "severity": "Low"
+          }
+        ]
+      },
+      {
+        "id": "bao-lam-dong-van",
+        "name": "Đồn Bảo Lâm",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.31,
+          "lng": 105.335
+        },
+        "district": "Đồng Văn",
+        "visit_duration_minutes": 45,
+        "opening_hours": "07:00-17:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.4,
+          "photography": 0.75,
+          "adventure": 0.35,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.65,
+          "friends": 0.75,
+          "family": 0.78
+        },
+        "must_visit": false,
+        "priority_score": 0.55,
+        "google_maps_rating": 4.2,
+        "google_maps_reviews_count": 89,
+        "tips": [
+          "Di tích lịch sử thời Pháp",
+          "View đẹp từ trên đồn"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "thung-lung-nho-que",
+        "name": "Thung lũng sông Nho Quế",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.135,
+          "lng": 105.53
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 90,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.85,
+          "photography": 0.97,
+          "adventure": 0.6,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.95,
+          "friends": 0.85,
+          "family": 0.65
+        },
+        "must_visit": true,
+        "priority_score": 0.92,
+        "google_maps_rating": 4.9,
+        "google_maps_reviews_count": 1234,
+        "tips": [
+          "Thuê thuyền kayak ngắm từ dưới lên",
+          "Màu nước xanh ngọc đẹp nhất buổi trưa"
+        ],
+        "warnings": [
+          {
+            "content": "Dòng nước chảy xiết sau mưa, không bơi lội",
+            "severity": "Medium"
+          }
+        ]
+      },
+      {
+        "id": "bến-thuyền-nho-que",
+        "name": "Bến thuyền Nho Quế",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.14,
+          "lng": 105.52499999999999
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 60,
+        "opening_hours": "07:00-17:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.88,
+          "photography": 0.9,
+          "adventure": 0.55,
+          "culinary": 0.1
+        },
+        "companion_scores": {
+          "solo": 0.75,
+          "couple": 0.92,
+          "friends": 0.85,
+          "family": 0.7
+        },
+        "must_visit": true,
+        "priority_score": 0.85,
+        "google_maps_rating": 4.8,
+        "google_maps_reviews_count": 678,
+        "tips": [
+          "Đặt thuyền từ sáng sớm",
+          "Đi thuyền 30 phút đến chân Mã Pí Lèng"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "cho-phien-meo-vac",
+        "name": "Chợ phiên Mèo Vạc",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.12,
+          "lng": 105.50999999999999
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 90,
+        "opening_hours": "05:00-12:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.5,
+          "photography": 0.88,
+          "adventure": 0.25,
+          "culinary": 0.92
+        },
+        "companion_scores": {
+          "solo": 0.9,
+          "couple": 0.82,
+          "friends": 0.88,
+          "family": 0.85
+        },
+        "must_visit": true,
+        "priority_score": 0.8,
+        "google_maps_rating": 4.7,
+        "google_maps_reviews_count": 445,
+        "tips": [
+          "Chợ phiên đặc sắc nhất vùng cao",
+          "Họp chủ nhật, đến trước 7h để cảm nhận đầy đủ"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "dinh-lung-pung",
+        "name": "Đỉnh Lũng Pung",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.145,
+          "lng": 105.535
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 120,
+        "opening_hours": "06:00-17:00",
+        "night_danger": true,
+        "vibe_scores": {
+          "healing": 0.72,
+          "photography": 0.93,
+          "adventure": 0.88,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.85,
+          "couple": 0.8,
+          "friends": 0.9,
+          "family": 0.35
+        },
+        "must_visit": false,
+        "priority_score": 0.75,
+        "google_maps_rating": 4.7,
+        "google_maps_reviews_count": 189,
+        "tips": [
+          "Nhìn xuống thung lũng Nho Quế từ trên cao",
+          "Cần đi bộ 45 phút từ đường chính"
+        ],
+        "warnings": [
+          {
+            "content": "Đường đất, trơn khi mưa",
+            "severity": "Medium"
+          }
+        ]
+      },
+      {
+        "id": "lang-hmong-meo-vac",
+        "name": "Làng người Hmông Xín Cái",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.11,
+          "lng": 105.515
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 75,
+        "opening_hours": "07:00-18:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.88,
+          "photography": 0.8,
+          "adventure": 0.2,
+          "culinary": 0.55
+        },
+        "companion_scores": {
+          "solo": 0.82,
+          "couple": 0.85,
+          "friends": 0.72,
+          "family": 0.9
+        },
+        "must_visit": false,
+        "priority_score": 0.65,
+        "google_maps_rating": 4.5,
+        "google_maps_reviews_count": 134,
+        "tips": [
+          "Trải nghiệm homestay 1 đêm nếu có thể",
+          "Thêu thổ cẩm với phụ nữ Hmông"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "ruong-bac-thang-meo-vac",
+        "name": "Ruộng bậc thang Mèo Vạc",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.13,
+          "lng": 105.503
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 60,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.85,
+          "photography": 0.87,
+          "adventure": 0.15,
+          "culinary": 0.08
+        },
+        "companion_scores": {
+          "solo": 0.82,
+          "couple": 0.88,
+          "friends": 0.75,
+          "family": 0.8
+        },
+        "must_visit": false,
+        "priority_score": 0.68,
+        "google_maps_rating": 4.5,
+        "google_maps_reviews_count": 167,
+        "tips": [
+          "Đẹp nhất tháng 9-10 lúa chín vàng",
+          "Góc chụp đẹp từ đường QL4C"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "ho-pan-ngo",
+        "name": "Hồ Pản Ngô",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.105,
+          "lng": 105.52499999999999
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 45,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.95,
+          "photography": 0.78,
+          "adventure": 0.1,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.88,
+          "couple": 0.92,
+          "friends": 0.7,
+          "family": 0.75
+        },
+        "must_visit": false,
+        "priority_score": 0.6,
+        "google_maps_rating": 4.4,
+        "google_maps_reviews_count": 82,
+        "tips": [
+          "Hồ nước xanh ẩn trong núi đá",
+          "Ít người biết, rất yên tĩnh"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "chua-lung-luong",
+        "name": "Chùa Lũng Lương",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.115,
+          "lng": 105.50699999999999
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 45,
+        "opening_hours": "06:00-18:00",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.95,
+          "photography": 0.7,
+          "adventure": 0.1,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.9,
+          "couple": 0.85,
+          "friends": 0.65,
+          "family": 0.8
+        },
+        "must_visit": false,
+        "priority_score": 0.55,
+        "google_maps_rating": 4.3,
+        "google_maps_reviews_count": 56,
+        "tips": [
+          "Chùa nhỏ nhưng bình yên",
+          "Ngắm núi đá từ sân chùa"
+        ],
+        "warnings": []
+      },
+      {
+        "id": "duong-trekking-meo-vac",
+        "name": "Trekking bản Thượng Phùng",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.138,
+          "lng": 105.49
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 180,
+        "opening_hours": "06:00-16:00",
+        "night_danger": true,
+        "vibe_scores": {
+          "healing": 0.75,
+          "photography": 0.88,
+          "adventure": 0.92,
+          "culinary": 0.1
+        },
+        "companion_scores": {
+          "solo": 0.88,
+          "couple": 0.78,
+          "friends": 0.92,
+          "family": 0.35
+        },
+        "must_visit": false,
+        "priority_score": 0.7,
+        "google_maps_rating": 4.6,
+        "google_maps_reviews_count": 143,
+        "tips": [
+          "Thuê porter địa phương",
+          "Mang theo đồ ăn và nước"
+        ],
+        "warnings": [
+          {
+            "content": "Chỉ dành cho người có thể lực tốt",
+            "severity": "Medium"
+          }
+        ]
+      },
+      {
+        "id": "cau-treo-meo-vac",
+        "name": "Cầu treo Mèo Vạc",
+        "poi_type": "Attraction",
+        "coordinates": {
+          "lat": 23.125,
+          "lng": 105.51299999999999
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 30,
+        "opening_hours": "00:00-23:59",
+        "night_danger": false,
+        "vibe_scores": {
+          "healing": 0.6,
+          "photography": 0.82,
+          "adventure": 0.75,
+          "culinary": 0.05
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.78,
+          "friends": 0.88,
+          "family": 0.55
+        },
+        "must_visit": false,
+        "priority_score": 0.58,
+        "google_maps_rating": 4.3,
+        "google_maps_reviews_count": 98,
+        "tips": [
+          "Cầu rung lắc nhiều",
+          "View thung lũng phía dưới rất đẹp"
+        ],
+        "warnings": [
+          {
+            "content": "Không dành cho người sợ độ cao",
+            "severity": "Low"
+          }
+        ]
       }
     ],
     "food": [
@@ -236,23 +1081,23 @@
         "name": "Quán Phở Bà Đức",
         "poi_type": "Restaurant",
         "coordinates": {
-          "lat": 22.8020,
-          "lng": 104.9800
+          "lat": 22.802,
+          "lng": 104.98
         },
         "district": "TP Hà Giang",
         "visit_duration_minutes": 60,
         "meal_type": "all_day",
         "opening_hours": "06:00-20:00",
         "vibe_scores": {
-          "healing": 0.30,
-          "photography": 0.40,
-          "adventure": 0.10,
-          "culinary": 0.90
+          "healing": 0.3,
+          "photography": 0.4,
+          "adventure": 0.1,
+          "culinary": 0.9
         },
         "companion_scores": {
           "solo": 0.85,
-          "couple": 0.70,
-          "friends": 0.90,
+          "couple": 0.7,
+          "friends": 0.9,
           "family": 0.95
         },
         "priority_score": 0.75,
@@ -269,24 +1114,24 @@
         "name": "Cơm Bà Tám",
         "poi_type": "Restaurant",
         "coordinates": {
-          "lat": 23.0800,
-          "lng": 104.9550
+          "lat": 23.08,
+          "lng": 104.955
         },
         "district": "Quản Bạ",
         "visit_duration_minutes": 60,
         "meal_type": "lunch",
         "opening_hours": "11:00-14:00",
         "vibe_scores": {
-          "healing": 0.40,
-          "photography": 0.30,
-          "adventure": 0.10,
+          "healing": 0.4,
+          "photography": 0.3,
+          "adventure": 0.1,
           "culinary": 0.85
         },
         "companion_scores": {
           "solo": 0.75,
-          "couple": 0.80,
+          "couple": 0.8,
           "friends": 0.85,
-          "family": 0.90
+          "family": 0.9
         },
         "priority_score": 0.65,
         "google_maps_rating": 4.3,
@@ -302,8 +1147,8 @@
         "name": "Nhà hàng Đồng Văn",
         "poi_type": "Restaurant",
         "coordinates": {
-          "lat": 23.2760,
-          "lng": 105.3570
+          "lat": 23.276,
+          "lng": 105.357
         },
         "district": "Đồng Văn",
         "visit_duration_minutes": 75,
@@ -311,17 +1156,17 @@
         "opening_hours": "17:00-22:00",
         "vibe_scores": {
           "healing": 0.35,
-          "photography": 0.50,
-          "adventure": 0.10,
+          "photography": 0.5,
+          "adventure": 0.1,
           "culinary": 0.88
         },
         "companion_scores": {
-          "solo": 0.60,
+          "solo": 0.6,
           "couple": 0.85,
-          "friends": 0.80,
+          "friends": 0.8,
           "family": 0.85
         },
-        "priority_score": 0.70,
+        "priority_score": 0.7,
         "google_maps_rating": 4.4,
         "google_maps_reviews_count": 123,
         "avg_spending": 120000,
@@ -335,24 +1180,24 @@
         "name": "Cafe Mã Pí Lèng",
         "poi_type": "Cafe",
         "coordinates": {
-          "lat": 23.2170,
-          "lng": 105.3170
+          "lat": 23.217,
+          "lng": 105.317
         },
         "district": "Mèo Vạc",
         "visit_duration_minutes": 30,
         "meal_type": "all_day",
         "opening_hours": "07:00-18:00",
         "vibe_scores": {
-          "healing": 0.80,
+          "healing": 0.8,
           "photography": 0.95,
-          "adventure": 0.20,
-          "culinary": 0.60
+          "adventure": 0.2,
+          "culinary": 0.6
         },
         "companion_scores": {
-          "solo": 0.90,
+          "solo": 0.9,
           "couple": 0.95,
           "friends": 0.85,
-          "family": 0.70
+          "family": 0.7
         },
         "priority_score": 0.75,
         "google_maps_rating": 4.7,
@@ -362,6 +1207,105 @@
           "View cực đẹp từ quán",
           "Cà phê bình thường nhưng view 10/10"
         ]
+      },
+      {
+        "id": "quan-an-quan-ba",
+        "name": "Quán Ăn Người Mông",
+        "poi_type": "Restaurant",
+        "coordinates": {
+          "lat": 23.075,
+          "lng": 104.95
+        },
+        "district": "Quản Bạ",
+        "visit_duration_minutes": 60,
+        "meal_type": "all_day",
+        "opening_hours": "07:00-20:00",
+        "vibe_scores": {
+          "healing": 0.5,
+          "photography": 0.55,
+          "adventure": 0.15,
+          "culinary": 0.88
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.82,
+          "friends": 0.85,
+          "family": 0.88
+        },
+        "priority_score": 0.68,
+        "google_maps_rating": 4.4,
+        "google_maps_reviews_count": 112,
+        "avg_spending": 70000,
+        "tips": [
+          "Thử mèn mén và thắng cố",
+          "Chủ nhà nấu theo kiểu truyền thống"
+        ]
+      },
+      {
+        "id": "com-nieu-meo-vac",
+        "name": "Cơm Niêu Mèo Vạc",
+        "poi_type": "Restaurant",
+        "coordinates": {
+          "lat": 23.153,
+          "lng": 105.387
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 60,
+        "meal_type": "lunch",
+        "opening_hours": "10:30-15:00",
+        "vibe_scores": {
+          "healing": 0.45,
+          "photography": 0.45,
+          "adventure": 0.1,
+          "culinary": 0.85
+        },
+        "companion_scores": {
+          "solo": 0.8,
+          "couple": 0.82,
+          "friends": 0.85,
+          "family": 0.9
+        },
+        "priority_score": 0.65,
+        "google_maps_rating": 4.4,
+        "google_maps_reviews_count": 95,
+        "avg_spending": 65000,
+        "tips": [
+          "Cơm bình dân ngon, giá hợp lý",
+          "Gọi thêm canh rau rừng"
+        ]
+      },
+      {
+        "id": "quan-toi-meo-vac",
+        "name": "Quán Tối Thung Lũng",
+        "poi_type": "Restaurant",
+        "coordinates": {
+          "lat": 23.156,
+          "lng": 105.384
+        },
+        "district": "Mèo Vạc",
+        "visit_duration_minutes": 75,
+        "meal_type": "dinner",
+        "opening_hours": "17:30-22:00",
+        "vibe_scores": {
+          "healing": 0.6,
+          "photography": 0.65,
+          "adventure": 0.1,
+          "culinary": 0.85
+        },
+        "companion_scores": {
+          "solo": 0.7,
+          "couple": 0.9,
+          "friends": 0.82,
+          "family": 0.8
+        },
+        "priority_score": 0.68,
+        "google_maps_rating": 4.5,
+        "google_maps_reviews_count": 108,
+        "avg_spending": 100000,
+        "tips": [
+          "Ngồi ngoài trời ngắm sao",
+          "Thử thịt lợn cắp nách nướng"
+        ]
       }
     ],
     "accommodations": [
@@ -370,33 +1314,31 @@
         "name": "Panorama Homestay Quản Bạ",
         "poi_type": "Accommodation",
         "coordinates": {
-          "lat": 23.0800,
-          "lng": 104.9500
+          "lat": 23.08,
+          "lng": 104.95
         },
         "district": "Quản Bạ",
         "check_in_time": "14:00",
         "check_out_time": "12:00",
         "vibe_scores": {
-          "healing": 0.90,
+          "healing": 0.9,
           "photography": 0.88,
-          "adventure": 0.30,
+          "adventure": 0.3,
           "culinary": 0.65
         },
         "companion_scores": {
-          "solo": 0.80,
+          "solo": 0.8,
           "couple": 0.95,
           "friends": 0.85,
-          "family": 0.90
+          "family": 0.9
         },
         "priority_score": 0.85,
         "google_maps_rating": 4.8,
         "google_maps_reviews_count": 234,
         "avg_spending": 350000,
-        "price_level": "Moderate",
         "tips": [
           "View núi đôi Cô Tiên tuyệt đẹp",
-          "Thức dậy sớm ngắm bình minh",
-          "Bao gồm bữa tối với gia đình chủ nhà"
+          "Thức dậy sớm ngắm bình minh"
         ]
       },
       {
@@ -404,32 +1346,30 @@
         "name": "Đồng Văn Stone Plateau Hotel",
         "poi_type": "Accommodation",
         "coordinates": {
-          "lat": 23.2750,
-          "lng": 105.3550
+          "lat": 23.275,
+          "lng": 105.355
         },
         "district": "Đồng Văn",
         "check_in_time": "14:00",
         "check_out_time": "12:00",
         "vibe_scores": {
           "healing": 0.75,
-          "photography": 0.70,
-          "adventure": 0.20,
-          "culinary": 0.70
+          "photography": 0.7,
+          "adventure": 0.2,
+          "culinary": 0.7
         },
         "companion_scores": {
           "solo": 0.85,
-          "couple": 0.90,
-          "friends": 0.80,
+          "couple": 0.9,
+          "friends": 0.8,
           "family": 0.85
         },
-        "priority_score": 0.80,
+        "priority_score": 0.8,
         "google_maps_rating": 4.6,
         "google_maps_reviews_count": 178,
         "avg_spending": 450000,
-        "price_level": "Moderate",
         "tips": [
           "Khách sạn tiện nghi nhất Đồng Văn",
-          "Có nhà hàng riêng",
           "Gần phố cổ, đi bộ được"
         ]
       },
@@ -438,8 +1378,8 @@
         "name": "Mèo Vạc Valley Homestay",
         "poi_type": "Accommodation",
         "coordinates": {
-          "lat": 23.1500,
-          "lng": 105.3800
+          "lat": 23.15,
+          "lng": 105.38
         },
         "district": "Mèo Vạc",
         "check_in_time": "14:00",
@@ -447,20 +1387,19 @@
         "vibe_scores": {
           "healing": 0.85,
           "photography": 0.82,
-          "adventure": 0.40,
-          "culinary": 0.60
+          "adventure": 0.4,
+          "culinary": 0.6
         },
         "companion_scores": {
           "solo": 0.75,
           "couple": 0.85,
-          "friends": 0.90,
-          "family": 0.80
+          "friends": 0.9,
+          "family": 0.8
         },
-        "priority_score": 0.70,
+        "priority_score": 0.7,
         "google_maps_rating": 4.5,
         "google_maps_reviews_count": 89,
         "avg_spending": 280000,
-        "price_level": "Budget",
         "tips": [
           "Homestay gia đình ấm cúng",
           "Chủ nhà rất thân thiện"
@@ -471,29 +1410,28 @@
         "name": "Hà Giang Center Hotel",
         "poi_type": "Accommodation",
         "coordinates": {
-          "lat": 22.8030,
-          "lng": 104.9790
+          "lat": 22.803,
+          "lng": 104.979
         },
         "district": "TP Hà Giang",
         "check_in_time": "14:00",
         "check_out_time": "12:00",
         "vibe_scores": {
-          "healing": 0.60,
-          "photography": 0.50,
-          "adventure": 0.20,
+          "healing": 0.6,
+          "photography": 0.5,
+          "adventure": 0.2,
           "culinary": 0.75
         },
         "companion_scores": {
-          "solo": 0.90,
+          "solo": 0.9,
           "couple": 0.85,
           "friends": 0.75,
-          "family": 0.80
+          "family": 0.8
         },
         "priority_score": 0.65,
         "google_maps_rating": 4.3,
         "google_maps_reviews_count": 267,
         "avg_spending": 400000,
-        "price_level": "Moderate",
         "tips": [
           "Tiện cho ngày đầu/cuối",
           "Gần trung tâm thành phố"

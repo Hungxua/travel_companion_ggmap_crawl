@@ -400,7 +400,7 @@ class GoogleMapsScraper:
                 print("Search completed")
 
                 # Click "Things to do" button
-                things_btn = self.page.locator("button[jslog*='120714']")
+                things_btn = self.page.locator("button[jslog*='120706']")
                 things_btn.first.click()
                 self.page.wait_for_timeout(3000)
 
@@ -465,10 +465,10 @@ def main():
         print(f"   About: {place['about']}")
 
     # Save to JSON
-    with open("google_maps_food.json", "w", encoding="utf-8") as f:
+    with open("google_maps_accomodations.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
-    print(f"\nSaved {len(results)} places to google_maps_food.json")
+    print(f"\nSaved {len(results)} places to google_maps_accomodations.json")
 
 
 if __name__ == "__main__":
