@@ -6,6 +6,7 @@ import json
 
 
 SCROLLING = 30
+REVIEW_SCROLLING = 50
 
 @dataclass
 class Review:
@@ -55,9 +56,10 @@ class Place:
 
 
 class GoogleMapsScraper:
-    def __init__(self, headless: bool = False, slow_mo: int = 50):
+    def __init__(self, headless: bool = False, slow_mo: int = 50, user_data_dir: Optional[str] = None):
         self.headless = headless
         self.slow_mo = slow_mo
+        self.user_data_dir = user_data_dir
         self.page: Optional[Page] = None
 
     @staticmethod
@@ -66,11 +68,20 @@ class GoogleMapsScraper:
         if not aria:
             return None, None
         
-        # "4.2 stars 1,234 Reviews" hoặc "4.2 sao 1,234 bài đánh giá"
+        # Pattern 1: "4.2 stars 1,234 Reviews" or "4,2 sao 1.234 bài đánh giá"
         m = re.search(r"([\d.,]+)\s*(?:stars?|sao)\s*([\d.,]+)", aria)
-        if not m:
-            return None, None
-        return m.group(1), m.group(2).replace(",", "")
+        if m:
+            stars = m.group(1)
+            count = m.group(2).replace(",", "").replace(".", "")
+            return stars, count
+            
+        # Pattern 2: Just review count "1,234 Reviews" or "1.234 bài đánh giá"
+        m = re.search(r"([\d.,]+)\s*(?:reviews?|bài đánh giá)", aria, re.IGNORECASE)
+        if m:
+            count = m.group(1).replace(",", "").replace(".", "")
+            return None, count
+            
+        return None, None
     
     @staticmethod
     def parse_location(url: str) -> Tuple[Optional[float], Optional[float]]:
@@ -129,47 +140,80 @@ class GoogleMapsScraper:
         try:
             # 1. Click button mở menu
             busy_data = BusyTime(days={})
-            for i in range(7):
-                button = self.page.locator(
-                    "button.e2moi[aria-haspopup='menu'][jsaction*='wfvdle']"
-                )
-                button.nth(2).click()
-                
-                self.page.wait_for_timeout(500)  # chờ menu render
+            
+            # Find the dropdown button by identifying if it contains a day of the week
+            # Locale is vi-VN, so we look for Vietnamese days
+            days_vn = ["Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy", "Chủ Nhật", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+            
+            # Find all menu buttons
+            menu_buttons = self.page.locator("button[aria-haspopup='menu']")
+            count_btns = menu_buttons.count()
+            target_button = None
+            
+            for i in range(count_btns):
+                btn = menu_buttons.nth(i)
+                if btn.is_visible():
+                    text = btn.inner_text().strip()
+                    # Check if text matches a day
+                    for day in days_vn:
+                        if day.lower() in text.lower():
+                            target_button = btn
+                            break
+                if target_button:
+                    break
+            
+            if target_button:
+                # Iterate through 7 days
+                for i in range(7):
+                    target_button.click(timeout=3000)
+                    self.page.wait_for_timeout(500)  # chờ menu render
 
-                # 2. Lấy tất cả menu items
-                self.page.locator("div[role='menuitemradio']").nth(i).click()
-                self.page.wait_for_timeout(1000)
-                busy_times = self.page.locator('div[role="img"][class="dpoVLd "]')
-                count = busy_times.count()
-                hours = []
-                for j in range(count):
-                    busy_time = busy_times.nth(j)
-                    label = busy_time.get_attribute("aria-label")
-                    busy_hour = GoogleMapsScraper.parse_busy_label(label)
-                    if busy_hour.hour not in hours:
-                        hours.append(busy_hour.hour)
-                        day = self.page.locator("span[class='uEubGf NlVald']").nth(6).inner_text()
-                        if day not in busy_data.days:
-                            busy_data.days[day] = BusyDay(day=day, hours=[])
+                    # 2. Lấy tất cả menu items
+                    # The menu items should be visible now
+                    menu_items = self.page.locator("div[role='menuitemradio']")
+                    if menu_items.count() > i:
+                         menu_items.nth(i).click()
+                         self.page.wait_for_timeout(1000)
+                    else:
+                        break
+                        
+                    busy_times = self.page.locator('div[role="img"][class="dpoVLd "]')
+                    count = busy_times.count()
+                    hours = []
+                    for j in range(count):
+                        busy_time = busy_times.nth(j)
+                        label = busy_time.get_attribute("aria-label")
+                        busy_hour = GoogleMapsScraper.parse_busy_label(label)
+                        if busy_hour.hour not in hours:
+                            hours.append(busy_hour.hour)
+                            day = self.page.locator("span[class='uEubGf NlVald']").nth(6).inner_text()
+                            if day not in busy_data.days:
+                                busy_data.days[day] = BusyDay(day=day, hours=[])
 
-                        busy_data.days[day].hours.append(busy_hour)
+                            busy_data.days[day].hours.append(busy_hour)
             place.busy_data = busy_data
         except Exception as e:
-            print(f'[extract] could not extract popular time: {e}')
+            # print(f'[extract] could not extract popular time: {e}')
             place.busy_data = {}
 
         # Reviews count
         try:
-            reviews_node = self.page.query_selector(
-                "span[role='img'][aria-label*='reviews'], span[role='img'][aria-label*='bài đánh giá']"
-            )
-            if reviews_node:
+            # Modify selector to be more specific to the detail pane (inside div.F7nice or similar)
+            # Use locator to find the one inside the main info header if possible, or just the one with specific structure
+            reviews_node = self.page.locator("div.F7nice span[aria-label*='reviews'], div.F7nice span[aria-label*='bài đánh giá']").first
+            if reviews_node.count() > 0:
                 reviews_text = reviews_node.get_attribute("aria-label")
                 _, num_reviews = self.parse_reviews(reviews_text)
                 place.num_reviews = num_reviews if num_reviews else "UNKNOWN"
             else:
-                place.num_reviews = "UNKNOWN"
+                # Fallback to button that often holds the review count
+                reviews_btn = self.page.locator("button[jsaction*='review']").filter(has_text=re.compile(r"\d+")).first
+                if reviews_btn.count() > 0:
+                     reviews_text = reviews_btn.get_attribute("aria-label")
+                     _, num_reviews = self.parse_reviews(reviews_text)
+                     place.num_reviews = num_reviews if num_reviews else "UNKNOWN"
+                else:
+                     place.num_reviews = "UNKNOWN"
         except Exception as e:
             print(f"[extract] could not extract reviews count: {e}")
             place.num_reviews = "UNKNOWN"
@@ -238,7 +282,8 @@ class GoogleMapsScraper:
                                 items.append(li.inner_text().strip())
                         about[section_key] = items
             else:
-                print(f"[extract_about] About tab not found (checked {tab_count} tabs)")
+                pass
+                # print(f"[extract_about] About tab not found (checked {tab_count} tabs)")
 
         except Exception as e:
             print(f"[extract_about] error: {e}")
@@ -273,17 +318,100 @@ class GoogleMapsScraper:
         """Extract reviews from the place"""
         reviews = []
         try:
-            # Click review button
-            review_button = self.page.locator("button[jslog*='145620']")
-            review_button.click(timeout=2000)
+            # Find Review tab dynamically
+            all_tabs = self.page.locator("button[data-tab-index]")
+            tab_count = all_tabs.count()
+            review_tab = None
+            
+            for i in range(tab_count):
+                tab = all_tabs.nth(i)
+                text = tab.inner_text()
+                aria = tab.get_attribute("aria-label") or ""
+                
+                if "Reviews" in text or "Bài đánh giá" in text or "Reviews" in aria or "Bài đánh giá" in aria:
+                    review_tab = tab
+                    break
+            
+            if review_tab:
+                review_tab.click(timeout=3000)
+            else:
+                print("[extract_reviews] Could not find Review tab")
+                return []
+
             self.page.wait_for_timeout(2000)
 
-            # scroll 5 times
-            # scroll cho thẻ div có class="m6QErb DxyBCb kA9KIf dS8AEf XiKgde", tabindex="-1", jslog="26354;mutable:true;"
-            for _ in range(5):
-                print('scrolling....')
-                self.page.locator("div.m6QErb.DxyBCb.kA9KIf.dS8AEf.XiKgde[tabindex='-1'][jslog='26354;mutable:true;']").evaluate("el => el.scrollTop += 1000")
-                self.page.wait_for_timeout(2000)
+            # Scroll for reviews
+            # Try to find the scrollable container dynamically
+            scrollable_div = None
+            
+            try:
+                # Wait for at least one review card to confirm reviews are loaded
+                try:
+                    self.page.wait_for_selector("div.jftiEf", timeout=5000) 
+                except:
+                    print("[extract_reviews] No review cards appeared after clicking tab.")
+                
+                # Find the scrollable container by traversing up from the first review card
+                current_element = self.page.locator("div.jftiEf").first
+                
+                for i in range(10): # Check up to 10 levels up
+                    parent = current_element.locator("..")
+                    if parent.count() == 0:
+                        break
+                    
+                    try:
+                        scroll_height = parent.evaluate("el => el.scrollHeight")
+                        client_height = parent.evaluate("el => el.clientHeight")
+                        overflow_y = parent.evaluate("el => window.getComputedStyle(el).overflowY")
+                        
+                        if scroll_height > client_height and (overflow_y == "auto" or overflow_y == "scroll" or overflow_y == "visible"):
+                             scrollable_div = parent
+                             break
+                        
+                        current_element = parent
+                    except Exception:
+                        pass
+                
+                if not scrollable_div:
+                     # Fallback
+                     scrollable_div = self.page.locator("div[role='main']").last 
+
+            except Exception as e:
+                print(f"[extract_reviews] Error finding scrollable container: {e}")
+
+            if scrollable_div and scrollable_div.count() > 0:
+                print(f"Found review container, scrolling {REVIEW_SCROLLING} times...")
+                last_height = 0
+                no_change_count = 0
+                
+                for i in range(REVIEW_SCROLLING):
+                    print(f'Scrolling review {i+1}/{REVIEW_SCROLLING}...')
+                    try:
+                        # Get current height
+                        current_height = scrollable_div.evaluate("el => el.scrollHeight")
+                        
+                        # Scroll down to the very bottom
+                        scrollable_div.evaluate("el => el.scrollTop = el.scrollHeight")
+                        self.page.wait_for_timeout(1000 + (i % 3) * 500) 
+                        
+                        # Check new height
+                        new_height = scrollable_div.evaluate("el => el.scrollHeight")
+                        
+                        if new_height == current_height:
+                            no_change_count += 1
+                            # Stop if height hasn't changed for 3 consecutive scrolls (handling network lag)
+                            if no_change_count >= 3:
+                                print("Reached end of reviews (content height unchanged).")
+                                break
+                        else:
+                            no_change_count = 0
+
+                    except Exception as e:
+                        print(f"Error scrolling: {e}")
+                        break
+            else:
+                print("Could not identify review scrollable container.")
+
 
             review_cards = self.page.locator("div.jftiEf")
             count = review_cards.count()
@@ -365,23 +493,45 @@ class GoogleMapsScraper:
         print('asdict(reviews)', reviews)
         return reviews
 
-    def search_and_scrape(self, search_query: str) -> List[Dict]:
-        """Main scraping function"""
+    def search_and_scrape(self, search_queries: List[str], wait_for_login: bool = False, limit: Optional[int] = None) -> List[Dict]:
+        """Main scraping function for multiple queries"""
         results = []
+        seen_coords = set()
 
         with sync_playwright() as p:
-            browser = p.chromium.launch(
-                headless=self.headless,
-                slow_mo=self.slow_mo,
-            )
-
-            context = browser.new_context(
-                viewport={"width": 1280, "height": 800},
-                locale="vi-VN",
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            )
-
-            self.page = context.new_page()
+            if self.user_data_dir:
+                print(f"Launching persistent context from: {self.user_data_dir}")
+                context = p.chromium.launch_persistent_context(
+                    user_data_dir=self.user_data_dir,
+                    headless=self.headless,
+                    slow_mo=self.slow_mo,
+                    viewport={"width": 1280, "height": 800},
+                    locale="vi-VN",
+                    # Use a standard Mac user agent
+                    user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    args=[
+                        "--disable-blink-features=AutomationControlled",
+                        "--no-sandbox",
+                        "--disable-setuid-sandbox",
+                    ],
+                    ignore_default_args=["--enable-automation"],
+                )
+                self.page = context.pages[0] if context.pages else context.new_page()
+            else:
+                browser = p.chromium.launch(
+                    headless=self.headless,
+                    slow_mo=self.slow_mo,
+                    args=[
+                        "--disable-blink-features=AutomationControlled",
+                    ],
+                    ignore_default_args=["--enable-automation"],
+                )
+                context = browser.new_context(
+                    viewport={"width": 1280, "height": 800},
+                    locale="vi-VN",
+                    user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                )
+                self.page = context.new_page()
 
             try:
                 # Open Google Maps
@@ -390,48 +540,91 @@ class GoogleMapsScraper:
 
                 self.page.wait_for_timeout(3000)
 
-                # Search
-                print(f"Searching for: {search_query}")
-                search_box = self.page.wait_for_selector('input[name="q"]')
-                search_box.fill(search_query)
-                self.page.keyboard.press("Enter")
-                self.page.wait_for_timeout(5000)
+                if wait_for_login:
+                    print("---------------------------------------------------------")
+                    print("If you are not logged in, please log in now in the browser window.")
+                    print("Press ENTER in this terminal when you are ready to continue...")
+                    print("---------------------------------------------------------")
+                    input()
 
-                print("Search completed")
-
-                # Click "Things to do" button
-                things_btn = self.page.locator("button[jslog*='150577']")
-                things_btn.first.click()
-                self.page.wait_for_timeout(3000)
-
-                feed = self.page.locator("div[role='feed']")
-                for i in range(SCROLLING):
-                    print(f'Scrolling... {i}')
-                    feed.hover()
-                    self.page.mouse.wheel(0, 3000)
-                    self.page.wait_for_timeout(2000)
-
-                # Get all cards
-                cards = self.page.locator("div[role='article']")
-                count = cards.count()
-                print(f"Found {count} places")
-
-                # Process each card
-                for i in range(count):
-                    print(f"\n{'='*60} Place {i + 1}/{count} {'='*60}")
-
+                for q_idx, search_query in enumerate(search_queries):
+                    print(f"\nProcessing query {q_idx + 1}/{len(search_queries)}: {search_query}")
+                    
                     try:
-                        card = cards.nth(i)
-                        card.click()
-                        self.page.wait_for_timeout(3000)
+                        # Search
+                        print(f"Searching for: {search_query}")
+                        search_box = self.page.locator('input[name="q"]')
+                        search_box.clear() # clear previous input
+                        search_box.fill(search_query)
+                        self.page.keyboard.press("Enter")
+                        self.page.wait_for_timeout(5000)
 
-                        # Extract place info (location is extracted inside)
-                        place = self.extract_place_info()
-                        results.append(asdict(place))
+                        print("Search completed")
 
+                        # Click "Things to do" button if available, or just scroll results
+                        try:
+                            # Try multiple selectors for "Things to do" or similar buttons
+                            things_btn = self.page.locator("button[jslog*='120706'], button[aria-label='Things to do']")
+                            if things_btn.count() > 0 and things_btn.first.is_visible():
+                                things_btn.first.click()
+                                self.page.wait_for_timeout(3000)
+                            else:
+                                print("Things to do button not found, assuming direct results or different layout.")
+                        except Exception as e:
+                            print(f"Error clicking Things to do: {e}")
+
+                        feed = self.page.locator("div[role='feed']")
+                        # If feed not found, maybe retry or skip scrolling
+                        if feed.count() > 0:
+                            for i in range(SCROLLING):
+                                print(f'Scrolling... {i}')
+                                feed.hover()
+                                self.page.mouse.wheel(0, 3000)
+                                self.page.wait_for_timeout(2000)
+                        else:
+                            print("Feed container not found, maybe single result or different layout.")
+
+                        # Get all cards
+                        cards = self.page.locator("div[role='article']")
+                        count = cards.count()
+                        print(f"Found {count} places for query '{search_query}'")
+
+                        # Process each card
+                        for i in range(count):
+                            if limit and len(results) >= limit:
+                                print(f"Reached limit of {limit} places.")
+                                break
+
+                            print(f"\n{'='*60} Place {i + 1}/{count} {'='*60}")
+
+                            try:
+                                card = cards.nth(i)
+                                card.click()
+                                self.page.wait_for_timeout(3000)
+
+                                # Extract place info (location is extracted inside)
+                                place = self.extract_place_info()
+
+                                # Deduplication check
+                                if place.latitude is not None and place.longitude is not None:
+                                    coord = (place.latitude, place.longitude)
+                                    if coord in seen_coords:
+                                        print(f"Skipping duplicate place: {place.title} at {coord}")
+                                        continue
+                                    seen_coords.add(coord)
+
+                                results.append(asdict(place))
+
+                            except Exception as e:
+                                print(f"Error processing card {i}: {e}")
+                                # results.append(asdict(Place()))
+                                continue
+                        
+                        if limit and len(results) >= limit:
+                            break
+                        
                     except Exception as e:
-                        print(f"Error processing card {i}: {e}")
-                        results.append(asdict(Place()))
+                        print(f"Error processing query '{search_query}': {e}")
                         continue
 
             except Exception as e:
@@ -439,14 +632,39 @@ class GoogleMapsScraper:
 
             finally:
                 self.page.wait_for_timeout(3000)
-                browser.close()
+                if self.user_data_dir:
+                    context.close()
+                else:
+                    browser.close()
 
         return results
 
 
 def main():
-    scraper = GoogleMapsScraper(headless=False, slow_mo=50)
-    results = scraper.search_and_scrape("Hà Giang")
+    import argparse
+    parser = argparse.ArgumentParser(description="Scrape Google Maps Places")
+    parser.add_argument("--limit", type=int, default=None, help="Limit number of places to scrape")
+    args = parser.parse_args()
+
+    # Use a directory for storing user profile (this will create it if not exists)
+    user_data_dir = "google_maps_user_data_place" 
+    
+    # Regions to scrape
+    regions = [
+        "huyện Quản Bạ", "huyện Vị Xuyên", "huyện Bắc Mê", "huyện Hoàng Su Phì", "huyện Xín Mần", "huyện Bắc Quang", "huyện Quang Bình"
+    ]
+    
+    queries = []
+    for region in regions:
+        queries.append(f"things to do {region}, Hà Giang")
+        queries.append(f"điểm tham quan {region}, Hà Giang")
+        queries.append(f"quán cafe {region}, Hà Giang")
+    
+    print(f"Generated {len(queries)} queries.")
+
+    # Set headless=False to allow manual login for the first time
+    scraper = GoogleMapsScraper(headless=False, slow_mo=50, user_data_dir=user_data_dir)
+    results = scraper.search_and_scrape(queries, wait_for_login=True, limit=args.limit)
 
     # Print results
     print("\n" + "=" * 80)
@@ -465,10 +683,10 @@ def main():
         print(f"   About: {place['about']}")
 
     # Save to JSON
-    with open("google_maps_results4.json", "w", encoding="utf-8") as f:
+    with open("google_maps_places.json", "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     
-    print(f"\nSaved {len(results)} places to google_maps_results4.json")
+    print(f"\nSaved {len(results)} places to google_maps_places.json")
 
 
 if __name__ == "__main__":

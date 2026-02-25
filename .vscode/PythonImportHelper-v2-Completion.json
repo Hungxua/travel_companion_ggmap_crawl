@@ -1,0 +1,1248 @@
+[
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "Locator",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "Locator",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "sync_playwright",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "Locator",
+        "importPath": "playwright.sync_api",
+        "description": "playwright.sync_api",
+        "isExtraImport": true,
+        "detail": "playwright.sync_api",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "asdict",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "field",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "class Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"\n    user_photos: str = \"UNKNOWN\"\n    visited_on: str = \"UNKNOWN\"\n    wait_time: str = \"UNKNOWN\"",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyHour",
+        "kind": 6,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "class BusyHour:\n    hour: int  # 8, 10, 11, 13\n    percent: int  # 63, 52, 47\n@dataclass\nclass BusyDay:\n    day: str  # monday, tuesday...\n    hours: List[BusyHour]\n@dataclass\nclass BusyTime:\n    days: Dict[str, BusyDay]",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyDay",
+        "kind": 6,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "class BusyDay:\n    day: str  # monday, tuesday...\n    hours: List[BusyHour]\n@dataclass\nclass BusyTime:\n    days: Dict[str, BusyDay]\n@dataclass\nclass Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyTime",
+        "kind": 6,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "class BusyTime:\n    days: Dict[str, BusyDay]\n@dataclass\nclass Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"\n    num_reviews: str = \"UNKNOWN\"\n    category: str = \"UNKNOWN\"\n    address: str = \"UNKNOWN\"\n    latitude: Optional[float] = None",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "class Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"\n    num_reviews: str = \"UNKNOWN\"\n    category: str = \"UNKNOWN\"\n    address: str = \"UNKNOWN\"\n    latitude: Optional[float] = None\n    longitude: Optional[float] = None\n    opening_time: List[Tuple[str, str]] = field(default_factory=list)\n    contact_url: str = \"UNKNOWN\"",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleMapsScraper",
+        "kind": 6,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "class GoogleMapsScraper:\n    def __init__(\n        self,\n        headless: bool = False,\n        slow_mo: int = 50,\n        user_data_dir: Optional[str] = None,\n    ):\n        self.headless = headless\n        self.slow_mo = slow_mo\n        self.user_data_dir = user_data_dir",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "def main():\n    import argparse\n    parser = argparse.ArgumentParser(description=\"Scrape Google Maps Accommodations\")\n    parser.add_argument(\n        \"--limit\", type=int, default=None, help=\"Limit number of places to scrape\"\n    )\n    args = parser.parse_args()\n    # Use a directory for storing user profile (this will create it if not exists)\n    user_data_dir = \"google_maps_user_data_accommodations\"\n    # Regions to scrape",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "SCROLLING",
+        "kind": 5,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "SCROLLING = 30\nREVIEW_SCROLLING = 50\n@dataclass\nclass Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "REVIEW_SCROLLING",
+        "kind": 5,
+        "importPath": "accommodations.main",
+        "description": "accommodations.main",
+        "peekOfCode": "REVIEW_SCROLLING = 50\n@dataclass\nclass Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"\n    user_photos: str = \"UNKNOWN\"",
+        "detail": "accommodations.main",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "class Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"\n    user_photos: str = \"UNKNOWN\"\n    visited_on: str = \"UNKNOWN\"\n    wait_time: str = \"UNKNOWN\"",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyHour",
+        "kind": 6,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "class BusyHour:\n    hour: int  # 8, 10, 11, 13\n    percent: int  # 63, 52, 47\n@dataclass\nclass BusyDay:\n    day: str  # monday, tuesday...\n    hours: List[BusyHour]\n@dataclass\nclass BusyTime:\n    days: Dict[str, BusyDay]",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyDay",
+        "kind": 6,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "class BusyDay:\n    day: str  # monday, tuesday...\n    hours: List[BusyHour]\n@dataclass\nclass BusyTime:\n    days: Dict[str, BusyDay]\n@dataclass\nclass Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyTime",
+        "kind": 6,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "class BusyTime:\n    days: Dict[str, BusyDay]\n@dataclass\nclass Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"\n    num_reviews: str = \"UNKNOWN\"\n    category: str = \"UNKNOWN\"\n    address: str = \"UNKNOWN\"\n    latitude: Optional[float] = None",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "class Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"\n    num_reviews: str = \"UNKNOWN\"\n    category: str = \"UNKNOWN\"\n    address: str = \"UNKNOWN\"\n    latitude: Optional[float] = None\n    longitude: Optional[float] = None\n    opening_time: List[Tuple[str, str]] = field(default_factory=list)\n    contact_url: str = \"UNKNOWN\"",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleMapsScraper",
+        "kind": 6,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "class GoogleMapsScraper:\n    def __init__(\n        self,\n        headless: bool = False,\n        slow_mo: int = 50,\n        user_data_dir: Optional[str] = None,\n    ):\n        self.headless = headless\n        self.slow_mo = slow_mo\n        self.user_data_dir = user_data_dir",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "def main():\n    import argparse\n    parser = argparse.ArgumentParser(description=\"Scrape Google Maps Food\")\n    parser.add_argument(\n        \"--limit\", type=int, default=None, help=\"Limit number of places to scrape\"\n    )\n    args = parser.parse_args()\n    # Use a directory for storing user profile (this will create it if not exists)\n    user_data_dir = \"google_maps_user_data_food\"\n    # Regions to scrape",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "SCROLLING",
+        "kind": 5,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "SCROLLING = 30\nREVIEW_SCROLLING = 50\n@dataclass\nclass Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "REVIEW_SCROLLING",
+        "kind": 5,
+        "importPath": "food.main",
+        "description": "food.main",
+        "peekOfCode": "REVIEW_SCROLLING = 50\n@dataclass\nclass Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"\n    user_photos: str = \"UNKNOWN\"",
+        "detail": "food.main",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "class Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"\n    user_photos: str = \"UNKNOWN\"\n    visited_on: str = \"UNKNOWN\"\n    wait_time: str = \"UNKNOWN\"",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyHour",
+        "kind": 6,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "class BusyHour:\n    hour: int            # 8, 10, 11, 13\n    percent: int         # 63, 52, 47\n@dataclass\nclass BusyDay:\n    day: str             # monday, tuesday...\n    hours: List[BusyHour]\n@dataclass\nclass BusyTime:\n    days: Dict[str, BusyDay]",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyDay",
+        "kind": 6,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "class BusyDay:\n    day: str             # monday, tuesday...\n    hours: List[BusyHour]\n@dataclass\nclass BusyTime:\n    days: Dict[str, BusyDay]\n@dataclass\nclass Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "BusyTime",
+        "kind": 6,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "class BusyTime:\n    days: Dict[str, BusyDay]\n@dataclass\nclass Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"\n    num_reviews: str = \"UNKNOWN\"\n    category: str = \"UNKNOWN\"\n    address: str = \"UNKNOWN\"\n    latitude: Optional[float] = None",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "class Place:\n    title: str = \"UNKNOWN\"\n    stars: str = \"UNKNOWN\"\n    num_reviews: str = \"UNKNOWN\"\n    category: str = \"UNKNOWN\"\n    address: str = \"UNKNOWN\"\n    latitude: Optional[float] = None\n    longitude: Optional[float] = None\n    opening_time: List[Tuple[str, str]] = field(default_factory=list)\n    contact_url: str = \"UNKNOWN\"",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "GoogleMapsScraper",
+        "kind": 6,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "class GoogleMapsScraper:\n    def __init__(self, headless: bool = False, slow_mo: int = 50, user_data_dir: Optional[str] = None):\n        self.headless = headless\n        self.slow_mo = slow_mo\n        self.user_data_dir = user_data_dir\n        self.page: Optional[Page] = None\n    @staticmethod\n    def parse_reviews(aria: Optional[str]) -> Tuple[Optional[str], Optional[str]]:\n        \"\"\"Parse review text to extract stars and review count\"\"\"\n        if not aria:",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "def main():\n    import argparse\n    parser = argparse.ArgumentParser(description=\"Scrape Google Maps Places\")\n    parser.add_argument(\"--limit\", type=int, default=None, help=\"Limit number of places to scrape\")\n    args = parser.parse_args()\n    # Use a directory for storing user profile (this will create it if not exists)\n    user_data_dir = \"google_maps_user_data_place\" \n    # Regions to scrape\n    regions = [\n        \"huyện Quản Bạ\", \"huyện Vị Xuyên\", \"huyện Bắc Mê\", \"huyện Hoàng Su Phì\", \"huyện Xín Mần\", \"huyện Bắc Quang\", \"huyện Quang Bình\"",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "SCROLLING",
+        "kind": 5,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "SCROLLING = 30\nREVIEW_SCROLLING = 50\n@dataclass\nclass Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "REVIEW_SCROLLING",
+        "kind": 5,
+        "importPath": "place.main",
+        "description": "place.main",
+        "peekOfCode": "REVIEW_SCROLLING = 50\n@dataclass\nclass Review:\n    rating: Optional[int] = None\n    time_review: str = \"UNKNOWN\"\n    content: str = \"UNKNOWN\"\n    user_name: str = \"UNKNOWN\"\n    user_level: str = \"UNKNOWN\"\n    user_reviews: str = \"UNKNOWN\"\n    user_photos: str = \"UNKNOWN\"",
+        "detail": "place.main",
+        "documentation": {}
+    },
+    {
+        "label": "PlaceType",
+        "kind": 6,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "class PlaceType(Enum):\n    ATTRACTION = \"attraction\"\n    FOOD = \"food\"\n    ACCOMMODATION = \"accommodation\"\n@dataclass\nclass Coordinates:\n    lat: float\n    lng: float\n@dataclass\nclass Place:",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "Coordinates",
+        "kind": 6,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "class Coordinates:\n    lat: float\n    lng: float\n@dataclass\nclass Place:\n    id: str\n    name: str\n    poi_type: str\n    coordinates: Coordinates\n    district: str",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "class Place:\n    id: str\n    name: str\n    poi_type: str\n    coordinates: Coordinates\n    district: str\n    visit_duration_minutes: int\n    vibe_scores: Dict[str, float]\n    companion_scores: Dict[str, float]\n    priority_score: float",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "ScheduleItem",
+        "kind": 6,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "class ScheduleItem:\n    time: str\n    type: str  # 'attraction', 'food', 'accommodation', 'transport'\n    place: Optional[Dict] = None\n    duration_minutes: Optional[int] = None\n    travel_time_minutes: Optional[int] = None\n    distance_km: Optional[float] = None\n    meal_type: Optional[str] = None\n    activity: Optional[str] = None\n    notes: Optional[str] = None",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "DaySchedule",
+        "kind": 6,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "class DaySchedule:\n    day: int\n    date: str\n    title: str\n    schedule: List[ScheduleItem]\n    summary: Dict\n# ============================================================================\n# UTILITY FUNCTIONS\n# ============================================================================\ndef haversine_distance(coord1: Coordinates, coord2: Coordinates) -> float:",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "ItineraryGenerator",
+        "kind": 6,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "class ItineraryGenerator:\n    \"\"\"\n    Main class for generating travel itinerary using greedy algorithm\n    \"\"\"\n    # Constants\n    MAX_DAILY_TIME_MINUTES = 480  # 8 hours\n    MAX_ATTRACTIONS_PER_DAY = 4\n    DAILY_START_TIME = \"08:00\"\n    ACCOMMODATION_DISTANCE_THRESHOLD = 20  # km\n    def __init__(self, places_data: Dict, user_preferences: Dict):",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "def haversine_distance(coord1: Coordinates, coord2: Coordinates) -> float:\n    \"\"\"\n    Tính khoảng cách giữa 2 điểm theo công thức Haversine\n    Returns: distance in kilometers\n    \"\"\"\n    R = 6371  # Earth radius in km\n    lat1_rad = math.radians(coord1.lat)\n    lat2_rad = math.radians(coord2.lat)\n    delta_lat = math.radians(coord2.lat - coord1.lat)\n    delta_lng = math.radians(coord2.lng - coord1.lng)",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "estimate_travel_time",
+        "kind": 2,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "def estimate_travel_time(coord1: Coordinates, coord2: Coordinates, \n                         is_mountain: bool = True) -> int:\n    \"\"\"\n    Ước tính thời gian di chuyển giữa 2 điểm\n    Returns: time in minutes\n    \"\"\"\n    distance_km = haversine_distance(coord1, coord2)\n    # Mountain roads are slower and winding\n    if is_mountain:\n        # Actual road distance = straight line × 1.3-1.5",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "parse_time",
+        "kind": 2,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "def parse_time(time_str: str) -> datetime:\n    \"\"\"Parse time string to datetime\"\"\"\n    return datetime.strptime(time_str, \"%H:%M\")\ndef format_time(dt: datetime) -> str:\n    \"\"\"Format datetime to time string\"\"\"\n    return dt.strftime(\"%H:%M\")\ndef add_minutes(dt: datetime, minutes: int) -> datetime:\n    \"\"\"Add minutes to datetime\"\"\"\n    return dt + timedelta(minutes=minutes)\n# ============================================================================",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "format_time",
+        "kind": 2,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "def format_time(dt: datetime) -> str:\n    \"\"\"Format datetime to time string\"\"\"\n    return dt.strftime(\"%H:%M\")\ndef add_minutes(dt: datetime, minutes: int) -> datetime:\n    \"\"\"Add minutes to datetime\"\"\"\n    return dt + timedelta(minutes=minutes)\n# ============================================================================\n# ITINERARY GENERATOR CLASS\n# ============================================================================\nclass ItineraryGenerator:",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "add_minutes",
+        "kind": 2,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "def add_minutes(dt: datetime, minutes: int) -> datetime:\n    \"\"\"Add minutes to datetime\"\"\"\n    return dt + timedelta(minutes=minutes)\n# ============================================================================\n# ITINERARY GENERATOR CLASS\n# ============================================================================\nclass ItineraryGenerator:\n    \"\"\"\n    Main class for generating travel itinerary using greedy algorithm\n    \"\"\"",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "route.main",
+        "description": "route.main",
+        "peekOfCode": "def main():\n    \"\"\"Main function\"\"\"\n    # 1. Load places data from JSON\n    print(\"📂 Loading places data from JSON...\")\n    with open('route\\ha_giang_places.json', 'r', encoding='utf-8') as f:\n        places_data = json.load(f)\n    print(f\"✅ Loaded {len(places_data['places']['attractions'])} attractions\")\n    print(f\"✅ Loaded {len(places_data['places']['food'])} food places\")\n    print(f\"✅ Loaded {len(places_data['places']['accommodations'])} accommodations\")\n    print()",
+        "detail": "route.main",
+        "documentation": {}
+    },
+    {
+        "label": "Coordinates",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class Coordinates:\n    lat: float\n    lng: float\n@dataclass\nclass Place:\n    id: str\n    name: str\n    poi_type: str\n    coordinates: Coordinates\n    district: str",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class Place:\n    id: str\n    name: str\n    poi_type: str\n    coordinates: Coordinates\n    district: str\n    visit_duration_minutes: int\n    vibe_scores: Dict[str, float]\n    companion_scores: Dict[str, float]\n    priority_score: float",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "Cluster",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class Cluster:\n    \"\"\"Một cụm địa điểm gần nhau về địa lý\"\"\"\n    id: int\n    centroid: Coordinates\n    attractions: List[Place]\n    total_visit_minutes: int  # Tổng thời gian thăm quan (chưa tính di chuyển nội bộ)\n    label: str = \"\"           # Tên tự gán (ví dụ: \"Khu vực Đồng Văn\")\n@dataclass\nclass DayPlan:\n    \"\"\"Kế hoạch 1 ngày sau khi assign clusters\"\"\"",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "DayPlan",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class DayPlan:\n    \"\"\"Kế hoạch 1 ngày sau khi assign clusters\"\"\"\n    day_number: int\n    clusters: List[Cluster]\n    start_location: Coordinates\n    end_location: Coordinates\n@dataclass\nclass ScheduleItem:\n    time: str\n    type: str   # 'attraction' | 'food' | 'accommodation' | 'transport'",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "ScheduleItem",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class ScheduleItem:\n    time: str\n    type: str   # 'attraction' | 'food' | 'accommodation' | 'transport'\n    place: Optional[Dict] = None\n    duration_minutes: Optional[int] = None\n    travel_time_minutes: Optional[int] = None\n    distance_km: Optional[float] = None\n    meal_type: Optional[str] = None\n    notes: Optional[str] = None\n@dataclass",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "DaySchedule",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class DaySchedule:\n    day: int\n    date: str\n    title: str\n    schedule: List[ScheduleItem]\n    summary: Dict\n# ============================================================================\n# UTILITY FUNCTIONS\n# ============================================================================\ndef haversine_distance(coord1: Coordinates, coord2: Coordinates) -> float:",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "DetailScheduler",
+        "kind": 6,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "class DetailScheduler:\n    \"\"\"\n    Chỉ làm việc với những điểm thuộc cụm của ngày đó.\n    Phạm vi đã thu hẹp từ 50 → 8-10 điểm → scoring chính xác hơn.\n    \"\"\"\n    MAX_ATTRACTIONS_PER_DAY = 4\n    DAILY_START_TIME = \"08:00\"\n    def __init__(self, food_places: List[Place],\n                 accommodations: List[Place],\n                 user_prefs: Dict):",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def haversine_distance(coord1: Coordinates, coord2: Coordinates) -> float:\n    \"\"\"Khoảng cách thẳng (km) theo công thức Haversine\"\"\"\n    R = 6371\n    lat1, lat2 = math.radians(coord1.lat), math.radians(coord2.lat)\n    dlat = math.radians(coord2.lat - coord1.lat)\n    dlng = math.radians(coord2.lng - coord1.lng)\n    a = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlng / 2) ** 2\n    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))\ndef travel_time_minutes(c1: Coordinates, c2: Coordinates, mountain: bool = True) -> int:\n    \"\"\"Ước tính thời gian di chuyển (phút)\"\"\"",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "travel_time_minutes",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def travel_time_minutes(c1: Coordinates, c2: Coordinates, mountain: bool = True) -> int:\n    \"\"\"Ước tính thời gian di chuyển (phút)\"\"\"\n    d = haversine_distance(c1, c2)\n    actual = d * (1.4 if mountain else 1.1)\n    speed = 25 if mountain else 40\n    return max(1, int(actual / speed * 60))\ndef parse_time(s: str) -> datetime:\n    return datetime.strptime(s, \"%H:%M\")\ndef fmt_time(dt: datetime) -> str:\n    return dt.strftime(\"%H:%M\")",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "parse_time",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def parse_time(s: str) -> datetime:\n    return datetime.strptime(s, \"%H:%M\")\ndef fmt_time(dt: datetime) -> str:\n    return dt.strftime(\"%H:%M\")\ndef add_min(dt: datetime, m: int) -> datetime:\n    return dt + timedelta(minutes=m)\ndef centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "fmt_time",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def fmt_time(dt: datetime) -> str:\n    return dt.strftime(\"%H:%M\")\ndef add_min(dt: datetime, m: int) -> datetime:\n    return dt + timedelta(minutes=m)\ndef centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]\n    return Coordinates(sum(lats) / len(lats), sum(lngs) / len(lngs))\n# ============================================================================",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "add_min",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def add_min(dt: datetime, m: int) -> datetime:\n    return dt + timedelta(minutes=m)\ndef centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]\n    return Coordinates(sum(lats) / len(lats), sum(lngs) / len(lngs))\n# ============================================================================\n# STEP 1 — CLUSTER: Tự động nhóm điểm gần nhau (DBSCAN-style, không cần sklearn)\n# ============================================================================",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "centroid",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]\n    return Coordinates(sum(lats) / len(lats), sum(lngs) / len(lngs))\n# ============================================================================\n# STEP 1 — CLUSTER: Tự động nhóm điểm gần nhau (DBSCAN-style, không cần sklearn)\n# ============================================================================\ndef cluster_attractions(attractions: List[Place],\n                        eps_km: float = 15.0,",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "cluster_attractions",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def cluster_attractions(attractions: List[Place],\n                        eps_km: float = 15.0,\n                        min_samples: int = 1) -> List[Cluster]:\n    \"\"\"\n    Thuật toán gom cụm đơn giản kiểu DBSCAN không dùng thư viện ngoài.\n    eps_km   : hai điểm cách nhau <= eps_km thì coi là \"láng giềng\"\n    min_samples: tối thiểu 1 điểm để tạo cụm (mọi điểm đều thuộc 1 cụm nào đó)\n    Trả về: list[Cluster], mỗi cluster là 1 cụm địa lý\n    \"\"\"\n    n = len(attractions)",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "order_clusters",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def order_clusters(clusters: List[Cluster],\n                   start: Coordinates) -> List[Cluster]:\n    \"\"\"\n    Sắp xếp thứ tự các cụm thành tuyến đường tối ưu (không zigzag).\n    Dùng Nearest Neighbor heuristic — O(n²), đủ tốt với 4-8 cụm.\n    Bắt đầu từ cụm gần start_location nhất, rồi luôn đi đến cụm gần nhất chưa thăm.\n    \"\"\"\n    unvisited = list(clusters)\n    ordered = []\n    current = start",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "assign_clusters_to_days",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def assign_clusters_to_days(ordered_clusters: List[Cluster],\n                             total_days: int,\n                             start: Coordinates) -> List[DayPlan]:\n    \"\"\"\n    Chia danh sách cụm (đã sắp thứ tự) vào từng ngày.\n    Nguyên tắc:\n    - Ngày 1 & ngày cuối có ngân sách thấp hơn (half day)\n    - Không bẻ ngược thứ tự cụm\n    - Cố gắng cân bằng tải giữa các ngày\n    \"\"\"",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "dict_to_place",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def dict_to_place(data: Dict) -> Place:\n    coords = Coordinates(lat=data['coordinates']['lat'],\n                         lng=data['coordinates']['lng'])\n    return Place(\n        id=data['id'],\n        name=data['name'],\n        poi_type=data['poi_type'],\n        coordinates=coords,\n        district=data['district'],\n        visit_duration_minutes=data.get('visit_duration_minutes', 60),",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "generate_itinerary",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def generate_itinerary(places_data: Dict, user_prefs: Dict) -> Dict:\n    \"\"\"\n    Entry point. Thực thi 4 bước và trả về lịch trình hoàn chỉnh.\n    \"\"\"\n    # ── Parse data ──────────────────────────────────────────────────────\n    dest = places_data['destination']\n    attractions = [dict_to_place(p) for p in places_data['places']['attractions']]\n    food_places  = [dict_to_place(p) for p in places_data['places']['food']]\n    accommodations = [dict_to_place(p) for p in places_data['places']['accommodations']]\n    start = Coordinates(lat=dest['start_location']['lat'],",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "print_itinerary",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def print_itinerary(result: Dict):\n    meta = result['meta']\n    route = result['route_analysis']\n    print(\"\\n\" + \"=\" * 80)\n    print(f\"📋 LỊCH TRÌNH {meta['total_days']} NGÀY — {result['destination'].upper()}\")\n    print(f\"   Tuyến: {' → '.join(route['cluster_order'])}\")\n    print(\"=\" * 80)\n    for day in result['itinerary']:\n        print(f\"\\n{'━' * 80}\")\n        print(f\"📅 NGÀY {day['day']}: {day['title']}  ({day['date']})\")",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "def main():\n    print(\"📂 Loading places data...\")\n    with open('route/ha_giang_places.json', 'r', encoding='utf-8') as f:\n        places_data = json.load(f)\n    print(f\"   Attractions : {len(places_data['places']['attractions'])}\")\n    print(f\"   Food        : {len(places_data['places']['food'])}\")\n    print(f\"   Accommodations: {len(places_data['places']['accommodations'])}\")\n    user_prefs = {\n        'days': 3,\n        'interests': ['photography', 'healing'],",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "FULL_DAY_BUDGET",
+        "kind": 5,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "FULL_DAY_BUDGET = 360    # 6 giờ tham quan + di chuyển nội cụm\nHALF_DAY_BUDGET = 180    # Ngày đầu/cuối\n# Overhead per cluster: di chuyển giữa các cụm, ăn uống\nCLUSTER_OVERHEAD = 90   # 1.5 giờ overhead cho mỗi cụm trong ngày\ndef assign_clusters_to_days(ordered_clusters: List[Cluster],\n                             total_days: int,\n                             start: Coordinates) -> List[DayPlan]:\n    \"\"\"\n    Chia danh sách cụm (đã sắp thứ tự) vào từng ngày.\n    Nguyên tắc:",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "HALF_DAY_BUDGET",
+        "kind": 5,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "HALF_DAY_BUDGET = 180    # Ngày đầu/cuối\n# Overhead per cluster: di chuyển giữa các cụm, ăn uống\nCLUSTER_OVERHEAD = 90   # 1.5 giờ overhead cho mỗi cụm trong ngày\ndef assign_clusters_to_days(ordered_clusters: List[Cluster],\n                             total_days: int,\n                             start: Coordinates) -> List[DayPlan]:\n    \"\"\"\n    Chia danh sách cụm (đã sắp thứ tự) vào từng ngày.\n    Nguyên tắc:\n    - Ngày 1 & ngày cuối có ngân sách thấp hơn (half day)",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "CLUSTER_OVERHEAD",
+        "kind": 5,
+        "importPath": "route.main1",
+        "description": "route.main1",
+        "peekOfCode": "CLUSTER_OVERHEAD = 90   # 1.5 giờ overhead cho mỗi cụm trong ngày\ndef assign_clusters_to_days(ordered_clusters: List[Cluster],\n                             total_days: int,\n                             start: Coordinates) -> List[DayPlan]:\n    \"\"\"\n    Chia danh sách cụm (đã sắp thứ tự) vào từng ngày.\n    Nguyên tắc:\n    - Ngày 1 & ngày cuối có ngân sách thấp hơn (half day)\n    - Không bẻ ngược thứ tự cụm\n    - Cố gắng cân bằng tải giữa các ngày",
+        "detail": "route.main1",
+        "documentation": {}
+    },
+    {
+        "label": "Coordinates",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class Coordinates:\n    lat: float\n    lng: float\n@dataclass\nclass Place:\n    id: str\n    name: str\n    poi_type: str\n    coordinates: Coordinates\n    district: str",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "Place",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class Place:\n    id: str\n    name: str\n    poi_type: str\n    coordinates: Coordinates\n    district: str\n    visit_duration_minutes: int\n    vibe_scores: Dict[str, float]\n    companion_scores: Dict[str, float]\n    priority_score: float",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "Cluster",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class Cluster:\n    \"\"\"Một cụm địa điểm gần nhau về địa lý\"\"\"\n    id: int\n    centroid: Coordinates\n    attractions: List[Place]\n    total_visit_minutes: int  # Tổng thời gian thăm quan (chưa tính di chuyển nội bộ)\n    label: str = \"\"           # Tên tự gán (ví dụ: \"Khu vực Đồng Văn\")\n@dataclass\nclass DayPlan:\n    \"\"\"Kế hoạch 1 ngày sau khi assign clusters\"\"\"",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "DayPlan",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class DayPlan:\n    \"\"\"Kế hoạch 1 ngày sau khi assign clusters\"\"\"\n    day_number: int\n    clusters: List[Cluster]\n    start_location: Coordinates\n    end_location: Coordinates\n@dataclass\nclass ScheduleItem:\n    time: str\n    type: str   # 'attraction' | 'food' | 'accommodation' | 'transport'",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "ScheduleItem",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class ScheduleItem:\n    time: str\n    type: str   # 'attraction' | 'food' | 'accommodation' | 'transport'\n    place: Optional[Dict] = None\n    duration_minutes: Optional[int] = None\n    travel_time_minutes: Optional[int] = None\n    distance_km: Optional[float] = None\n    meal_type: Optional[str] = None\n    notes: Optional[str] = None\n@dataclass",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "DaySchedule",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class DaySchedule:\n    day: int\n    date: str\n    title: str\n    schedule: List[ScheduleItem]\n    summary: Dict\n# ============================================================================\n# UTILITY FUNCTIONS\n# ============================================================================\ndef haversine_distance(coord1: Coordinates, coord2: Coordinates) -> float:",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "DetailScheduler",
+        "kind": 6,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "class DetailScheduler:\n    \"\"\"\n    Chỉ làm việc với những điểm thuộc cụm của ngày đó.\n    Phạm vi đã thu hẹp từ 50 → 8-10 điểm → scoring chính xác hơn.\n    \"\"\"\n    MAX_ATTRACTIONS_PER_DAY = 4\n    DAILY_START_TIME = \"08:00\"\n    def __init__(self, food_places: List[Place],\n                 accommodations: List[Place],\n                 user_prefs: Dict):",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def haversine_distance(coord1: Coordinates, coord2: Coordinates) -> float:\n    \"\"\"Khoảng cách thẳng (km) theo công thức Haversine\"\"\"\n    R = 6371\n    lat1, lat2 = math.radians(coord1.lat), math.radians(coord2.lat)\n    dlat = math.radians(coord2.lat - coord1.lat)\n    dlng = math.radians(coord2.lng - coord1.lng)\n    a = math.sin(dlat / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlng / 2) ** 2\n    return R * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))\ndef travel_time_minutes(c1: Coordinates, c2: Coordinates, mountain: bool = True) -> int:\n    \"\"\"Ước tính thời gian di chuyển (phút)\"\"\"",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "travel_time_minutes",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def travel_time_minutes(c1: Coordinates, c2: Coordinates, mountain: bool = True) -> int:\n    \"\"\"Ước tính thời gian di chuyển (phút)\"\"\"\n    d = haversine_distance(c1, c2)\n    actual = d * (1.4 if mountain else 1.1)\n    speed = 25 if mountain else 40\n    return max(1, int(actual / speed * 60))\ndef parse_time(s: str) -> datetime:\n    return datetime.strptime(s, \"%H:%M\")\ndef fmt_time(dt: datetime) -> str:\n    return dt.strftime(\"%H:%M\")",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "parse_time",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def parse_time(s: str) -> datetime:\n    return datetime.strptime(s, \"%H:%M\")\ndef fmt_time(dt: datetime) -> str:\n    return dt.strftime(\"%H:%M\")\ndef add_min(dt: datetime, m: int) -> datetime:\n    return dt + timedelta(minutes=m)\ndef centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "fmt_time",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def fmt_time(dt: datetime) -> str:\n    return dt.strftime(\"%H:%M\")\ndef add_min(dt: datetime, m: int) -> datetime:\n    return dt + timedelta(minutes=m)\ndef centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]\n    return Coordinates(sum(lats) / len(lats), sum(lngs) / len(lngs))\n# ============================================================================",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "add_min",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def add_min(dt: datetime, m: int) -> datetime:\n    return dt + timedelta(minutes=m)\ndef centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]\n    return Coordinates(sum(lats) / len(lats), sum(lngs) / len(lngs))\n# ============================================================================\n# STEP 1 — CLUSTER: Tự động nhóm điểm gần nhau (DBSCAN-style, không cần sklearn)\n# ============================================================================",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "centroid",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def centroid(places: List[Place]) -> Coordinates:\n    \"\"\"Tọa độ trung tâm của một tập điểm\"\"\"\n    lats = [p.coordinates.lat for p in places]\n    lngs = [p.coordinates.lng for p in places]\n    return Coordinates(sum(lats) / len(lats), sum(lngs) / len(lngs))\n# ============================================================================\n# STEP 1 — CLUSTER: Tự động nhóm điểm gần nhau (DBSCAN-style, không cần sklearn)\n# ============================================================================\ndef cluster_attractions(attractions: List[Place],\n                        eps_km: float = 18.0,",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "cluster_attractions",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def cluster_attractions(attractions: List[Place],\n                        eps_km: float = 18.0,\n                        min_samples: int = 1) -> List[Cluster]:\n    \"\"\"\n    Thuật toán gom cụm đơn giản kiểu DBSCAN không dùng thư viện ngoài.\n    eps_km   : hai điểm cách nhau <= eps_km thì coi là \"láng giềng\"\n    min_samples: tối thiểu 1 điểm để tạo cụm (mọi điểm đều thuộc 1 cụm nào đó)\n    Trả về: list[Cluster], mỗi cluster là 1 cụm địa lý\n    \"\"\"\n    n = len(attractions)",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "order_clusters",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def order_clusters(clusters: List[Cluster],\n                   start: Coordinates) -> List[Cluster]:\n    \"\"\"\n    Sắp xếp thứ tự các cụm thành tuyến đường tối ưu (không zigzag).\n    Nearest Neighbor: từ vị trí hiện tại luôn chọn cụm gần nhất chưa thăm.\n    \"\"\"\n    print(f\"   📍 Điểm xuất phát: ({start.lat:.4f}, {start.lng:.4f})\")\n    print(f\"   Khoảng cách từ xuất phát đến từng cụm:\")\n    for c in clusters:\n        d = haversine_distance(start, c.centroid)",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "assign_clusters_to_days",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def assign_clusters_to_days(ordered_clusters: List[Cluster],\n                             total_days: int,\n                             start: Coordinates) -> List[DayPlan]:\n    \"\"\"\n    Chia danh sách cụm (đã sắp thứ tự) vào từng ngày.\n    Nguyên tắc:\n    - Mọi ngày đều có ngân sách bằng nhau (FULL_DAY_BUDGET)\n    - Không bẻ ngược thứ tự cụm\n    - overhead tính động = travel_time thực từ vị trí trước đến centroid cụm\n    \"\"\"",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "dict_to_place",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def dict_to_place(data: Dict) -> Place:\n    coords = Coordinates(lat=data['coordinates']['lat'],\n                         lng=data['coordinates']['lng'])\n    return Place(\n        id=data['id'],\n        name=data['name'],\n        poi_type=data['poi_type'],\n        coordinates=coords,\n        district=data['district'],\n        visit_duration_minutes=data.get('visit_duration_minutes', 60),",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "generate_itinerary",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def generate_itinerary(places_data: Dict, user_prefs: Dict) -> Dict:\n    \"\"\"\n    Entry point. Thực thi 4 bước và trả về lịch trình hoàn chỉnh.\n    \"\"\"\n    # ── Parse data ──────────────────────────────────────────────────────\n    dest = places_data['destination']\n    attractions = [dict_to_place(p) for p in places_data['places']['attractions']]\n    food_places  = [dict_to_place(p) for p in places_data['places']['food']]\n    accommodations = [dict_to_place(p) for p in places_data['places']['accommodations']]\n    # Điểm bắt đầu cố định: trung tâm TP Hà Giang",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "print_itinerary",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def print_itinerary(result: Dict):\n    meta = result['meta']\n    route = result['route_analysis']\n    print(\"\\n\" + \"=\" * 80)\n    print(f\"📋 LỊCH TRÌNH {meta['total_days']} NGÀY — {result['destination'].upper()}\")\n    print(f\"   Tuyến: {' → '.join(route['cluster_order'])}\")\n    print(\"=\" * 80)\n    for day in result['itinerary']:\n        print(f\"\\n{'━' * 80}\")\n        print(f\"📅 NGÀY {day['day']}: {day['title']}  ({day['date']})\")",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "def main():\n    print(\"📂 Loading places data...\")\n    with open('route/ha_giang_places.json', 'r', encoding='utf-8') as f:\n        places_data = json.load(f)\n    print(f\"   Attractions : {len(places_data['places']['attractions'])}\")\n    print(f\"   Food        : {len(places_data['places']['food'])}\")\n    print(f\"   Accommodations: {len(places_data['places']['accommodations'])}\")\n    user_prefs = {\n        'days': 3,\n        'interests': ['photography', 'healing'],",
+        "detail": "route.main8",
+        "documentation": {}
+    },
+    {
+        "label": "FULL_DAY_BUDGET",
+        "kind": 5,
+        "importPath": "route.main8",
+        "description": "route.main8",
+        "peekOfCode": "FULL_DAY_BUDGET = 480    # 8 giờ thực tế (di chuyển + tham quan)\ndef assign_clusters_to_days(ordered_clusters: List[Cluster],\n                             total_days: int,\n                             start: Coordinates) -> List[DayPlan]:\n    \"\"\"\n    Chia danh sách cụm (đã sắp thứ tự) vào từng ngày.\n    Nguyên tắc:\n    - Mọi ngày đều có ngân sách bằng nhau (FULL_DAY_BUDGET)\n    - Không bẻ ngược thứ tự cụm\n    - overhead tính động = travel_time thực từ vị trí trước đến centroid cụm",
+        "detail": "route.main8",
+        "documentation": {}
+    }
+]
